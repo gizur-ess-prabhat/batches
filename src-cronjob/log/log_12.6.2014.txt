@@ -1,0 +1,32 @@
+User: Cloud1 - June 12, 2014, 5:34 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud1 - June 12, 2014, 5:34 am
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud1 - June 12, 2014, 5:34 am
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - June 12, 2014, 5:34 am
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - June 12, 2014, 5:34 am
+File: phpcronjob1
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - June 12, 2014, 5:34 am
+File: phpcronjob1
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - June 12, 2014, 5:34 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order count query
+-------------------------
+User: Cloud1 - June 12, 2014, 5:34 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid FROM vtiger_salesorder SO WHERE SO.sostatus IN ('Created','Approved')
+-------------------------

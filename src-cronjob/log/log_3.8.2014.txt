@@ -1,0 +1,2187 @@
+User: Cloud1 - August 3, 2014, 3:27 pm
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud1 - August 3, 2014, 3:27 pm
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud1 - August 3, 2014, 3:27 pm
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - August 3, 2014, 3:27 pm
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - August 3, 2014, 3:27 pm
+File: phpcronjob1
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 3:27 pm
+File: phpcronjob1
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 3:27 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 3:27 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid FROM vtiger_salesorder SO WHERE SO.sostatus IN ('Created','Approved')
+-------------------------
+User: Cloud1 - August 3, 2014, 3:27 pm
+File: phpcronjob1
+Message: Total number of order : 1
+-------------------------
+User: Cloud1 - August 3, 2014, 3:27 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud1 - August 3, 2014, 3:27 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 5
+-------------------------
+User: Cloud1 - August 3, 2014, 3:27 pm
+File: phpcronjob1
+Message: No of salesOrder: 1
+-------------------------
+User: Cloud1 - August 3, 2014, 3:27 pm
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - August 3, 2014, 3:27 pm
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12347","salesorder_no":"ORD6213","cf_650":"Yes","cf_651":"Yes","accountname":"252610","contactid":"264","duedate":"2014-08-03","sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - August 3, 2014, 3:27 pm
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6213)
+-------------------------
+User: Cloud1 - August 3, 2014, 3:27 pm
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - August 3, 2014, 3:27 pm
+File: phpcronjob1
+Message: Total number of products (ORD6213): 1
+-------------------------
+User: Cloud1 - August 3, 2014, 3:27 pm
+File: phpcronjob1
+Message: In createIntegrationProduct(1775) Preparing insert product query.
+-------------------------
+User: Cloud1 - August 3, 2014, 3:27 pm
+File: phpcronjob1
+Message: In createIntegrationProduct(1775) Inserting products 
+-------------------------
+User: Cloud1 - August 3, 2014, 3:27 pm
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - August 3, 2014, 3:27 pm
+File: phpcronjob1
+Message: Updating sales order (12347) Delivered
+-------------------------
+User: Cloud1 - August 3, 2014, 3:27 pm
+File: phpcronjob1
+Message: Creating sales order: {"count":1,"salesorders":{"ORD6213":{"count":1,"products":{"297060":{"qtn":"4.000","status":true}},"status":true}},"message":"1 number of sales orders processed.","alertEmailSales":"Mail sent successfully "}
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: Connected with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon _sThree
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: Connected with Amazon _sThree
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Preparing sales order query
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Executing Query: SELECT * FROM sales_orders SO 
+            WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+            LIMIT 0, 5
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(1775) : Fetching products
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: Total number of products (1775): 1
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201408031531.252610 content generated
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201408031531.252610 at every 80 chars
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201408031531.252610 contents: HEADERGIZUR           2014080315318541M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776213+226140805+039140803+040776213+189297060004+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(1775, Delivered) : Updating sales order (1775) column set_status to Delivered
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved') AND SO.mos = 'Yes'
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : No Sales Order Found for MOS!
+-------------------------
+User: Cloud1 - August 3, 2014, 3:31 pm
+File: phpcronjob2
+Message: {"set":{"count":1,"salesorders":{"ORD6213":{"status":true,"count":1,"file":"SET.GZ.FTP.IN.BST.201408031531.252610"}},"message":"1 number of sales orders processed for SET files."},"message":"In getSalesOrdersCountMos() : No Sales Order Found for MOS!"}
+-------------------------
+User: Cloud1 - August 3, 2014, 3:34 pm
+File: phpcronjob3
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - August 3, 2014, 3:34 pm
+File: phpcronjob3
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 3:34 pm
+File: phpcronjob3
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 3:34 pm
+File: phpcronjob3
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 3:34 pm
+File: phpcronjob3
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 3:34 pm
+File: phpcronjob3
+Message: Number of messages found in message queue : 1.
+-------------------------
+User: Cloud1 - August 3, 2014, 3:34 pm
+File: phpcronjob3
+Message: Get the single message from the message queue
+-------------------------
+User: Cloud1 - August 3, 2014, 3:34 pm
+File: phpcronjob3
+Message: Message received from the message queue server
+-------------------------
+User: Cloud1 - August 3, 2014, 3:34 pm
+File: phpcronjob3
+Message: Message Received: {"file":"SET.GZ.FTP.IN.BST.201408031531.252610","content":"HEADERGIZUR           2014080315318541M256      RUTIN   .130KF27777100   mottagn\r\ning initierad                                                                   \r\n      0012526101+03751+038776213+226140805+039140803+040776213+189297060004+C   \r\n      RUTIN   .130KF27777100   Mottagning avslutad    BYTES\/BLOCKS\/RETRIES=1084 \r\n\/5    \/0.","type":"SET"}
+-------------------------
+User: Cloud1 - August 3, 2014, 3:34 pm
+File: phpcronjob3
+Message: Deleting message from message queue : SET.GZ.FTP.IN.BST.201408031531.252610.
+-------------------------
+User: Cloud1 - August 3, 2014, 3:34 pm
+File: phpcronjob3
+Message: Deleted message Response : {"header":{"server":"Server","date":"Sun, 03 Aug 2014 15:36:27 GMT","content-type":"text\/xml","content-length":"215","connection":"keep-alive","x-amzn-requestid":"867d7521-dc67-507b-8932-3979855c7682","_info":{"url":"https:\/\/sqs.eu-west-1.amazonaws.com\/065717488322\/cikab_queue","content_type":"text\/xml","http_code":200,"header_size":197,"request_size":1185,"filetime":-1,"ssl_verify_result":0,"redirect_count":0,"total_time":1.119759,"namelookup_time":1.9e-5,"connect_time":0.239619,"pretransfer_time":0.799977,"size_upload":540,"size_download":215,"speed_download":192,"speed_upload":482,"download_content_length":215,"upload_content_length":540,"starttransfer_time":1.119717,"redirect_time":0,"certinfo":[],"primary_ip":"178.236.6.180","primary_port":443,"local_ip":"115.245.155.228","local_port":51457,"redirect_url":"","method":"POST"},"x-aws-stringtosign":"POST\nsqs.eu-west-1.amazonaws.com\n\/065717488322\/cikab_queue\nAWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNsspHSzh9FChggsliRxgvvY2u3BCbaJT1QLibt7LzP4hAYX0KOONzlW0EN1N9KjrpgjjK2W4LRrd8GyhdbqOUsDqyRSItvOSPJ1nq%2BbsKxTHxn01EfmP6bsUEPflUG1kN%2F8ayKYYFiaK746Ue06%2BdeovCKfhFCincR5WwRUWPA6t6iXoGeHny3fZKyaMkvYVn3k6LJx8hpAKdQDKPXqo77NyhYPLGl9jote9dzihiEJIgBnFMf9DikHTQ7OmAOCOeLRO067u%2FvY2hs5Ks8%2BCixHhl54Gumxhwg%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-08-03T15%3A34%3A12Z&Version=2011-10-01","x-aws-request-headers":{"Content-Type":"application\/x-www-form-urlencoded; charset=utf-8","Expect":""},"x-aws-body":"AWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNsspHSzh9FChggsliRxgvvY2u3BCbaJT1QLibt7LzP4hAYX0KOONzlW0EN1N9KjrpgjjK2W4LRrd8GyhdbqOUsDqyRSItvOSPJ1nq%2BbsKxTHxn01EfmP6bsUEPflUG1kN%2F8ayKYYFiaK746Ue06%2BdeovCKfhFCincR5WwRUWPA6t6iXoGeHny3fZKyaMkvYVn3k6LJx8hpAKdQDKPXqo77NyhYPLGl9jote9dzihiEJIgBnFMf9DikHTQ7OmAOCOeLRO067u%2FvY2hs5Ks8%2BCixHhl54Gumxhwg%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-08-03T15%3A34%3A12Z&Version=2011-10-01&Signature=wFLISt2Fyu4B6n5ob12TTuldehuiU6SJv5tAWtXCSM0%3D"},"body":{"@attributes":{"ns":"http:\/\/queue.amazonaws.com\/doc\/2011-10-01\/"},"ResponseMetadata":{"RequestId":"867d7521-dc67-507b-8932-3979855c7682"}},"status":200}
+-------------------------
+User: Cloud1 - August 3, 2014, 3:34 pm
+File: phpcronjob3
+Message: {"files":{"SET.GZ.FTP.IN.BST.201408031531.252610":{"status":true}},"message":"1 no of files processed.","alertEmailSales":"Mail sent successfully "}
+-------------------------
+User: Cloud1 - August 3, 2014, 3:45 pm
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud1 - August 3, 2014, 3:45 pm
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud1 - August 3, 2014, 3:45 pm
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - August 3, 2014, 3:45 pm
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - August 3, 2014, 3:45 pm
+File: phpcronjob1
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 3:45 pm
+File: phpcronjob1
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 3:45 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 3:45 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid FROM vtiger_salesorder SO WHERE SO.sostatus IN ('Created','Approved')
+-------------------------
+User: Cloud1 - August 3, 2014, 3:45 pm
+File: phpcronjob1
+Message: Total number of order : 1
+-------------------------
+User: Cloud1 - August 3, 2014, 3:45 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud1 - August 3, 2014, 3:45 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 5
+-------------------------
+User: Cloud1 - August 3, 2014, 3:45 pm
+File: phpcronjob1
+Message: No of salesOrder: 1
+-------------------------
+User: Cloud1 - August 3, 2014, 3:45 pm
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - August 3, 2014, 3:45 pm
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12347","salesorder_no":"ORD6213","cf_650":"Yes","cf_651":"Yes","accountname":"252610","contactid":"264","duedate":"2014-08-03","sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - August 3, 2014, 3:45 pm
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6213)
+-------------------------
+User: Cloud1 - August 3, 2014, 3:45 pm
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - August 3, 2014, 3:45 pm
+File: phpcronjob1
+Message: Total number of products (ORD6213): 1
+-------------------------
+User: Cloud1 - August 3, 2014, 3:45 pm
+File: phpcronjob1
+Message: In createIntegrationProduct(1776) Preparing insert product query.
+-------------------------
+User: Cloud1 - August 3, 2014, 3:45 pm
+File: phpcronjob1
+Message: In createIntegrationProduct(1776) Inserting products 
+-------------------------
+User: Cloud1 - August 3, 2014, 3:45 pm
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - August 3, 2014, 3:45 pm
+File: phpcronjob1
+Message: Updating sales order (12347) Delivered
+-------------------------
+User: Cloud1 - August 3, 2014, 3:45 pm
+File: phpcronjob1
+Message: Creating sales order: {"count":1,"salesorders":{"ORD6213":{"count":1,"products":{"297060":{"qtn":"4.000","status":true}},"status":true}},"message":"1 number of sales orders processed.","alertEmailSales":"Mail sent successfully "}
+-------------------------
+User: Cloud1 - August 3, 2014, 3:49 pm
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - August 3, 2014, 3:49 pm
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - August 3, 2014, 3:49 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 3:49 pm
+File: phpcronjob2
+Message: Connected with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 3:49 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 3:49 pm
+File: phpcronjob2
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 3:49 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon _sThree
+-------------------------
+User: Cloud1 - August 3, 2014, 3:49 pm
+File: phpcronjob2
+Message: Connected with Amazon _sThree
+-------------------------
+User: Cloud1 - August 3, 2014, 3:49 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 3:49 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+-------------------------
+User: Cloud1 - August 3, 2014, 3:49 pm
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Preparing sales order query
+-------------------------
+User: Cloud1 - August 3, 2014, 3:49 pm
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Executing Query: SELECT * FROM sales_orders SO 
+            WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+            LIMIT 0, 5
+-------------------------
+User: Cloud1 - August 3, 2014, 3:49 pm
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - August 3, 2014, 3:49 pm
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(1776) : Fetching products
+-------------------------
+User: Cloud1 - August 3, 2014, 3:49 pm
+File: phpcronjob2
+Message: Total number of products (1776): 1
+-------------------------
+User: Cloud1 - August 3, 2014, 3:49 pm
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201408031549.252610 content generated
+-------------------------
+User: Cloud1 - August 3, 2014, 3:49 pm
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201408031549.252610 at every 80 chars
+-------------------------
+User: Cloud1 - August 3, 2014, 3:49 pm
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201408031549.252610 contents: HEADERGIZUR           2014080315499136M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776213+226140805+039140803+040776213+189297060004+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - August 3, 2014, 3:49 pm
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - August 3, 2014, 3:50 pm
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - August 3, 2014, 3:50 pm
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - August 3, 2014, 3:50 pm
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 3:50 pm
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(1776, Delivered) : Updating sales order (1776) column set_status to Delivered
+-------------------------
+User: Cloud1 - August 3, 2014, 3:50 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 3:50 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved') AND SO.mos = 'Yes'
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: Connected with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon _sThree
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: Connected with Amazon _sThree
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : No Sales Order Found for SET!
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.mos_status IN ('Created','Approved') AND SO.mos = 'Yes'
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: Connected with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon _sThree
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: Connected with Amazon _sThree
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : No Sales Order Found for SET!
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.mos_status IN ('Created','Approved') AND SO.mos = 'Yes'
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: In getAccountsForMos() : Preparing sales order query
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: In getAccountsForMos() : Executing Query: SELECT DISTINCT SO.accountname FROM sales_orders SO
+            WHERE SO.mos_status IN ('Created','Approved') AND SO.mos = 'Yes'
+            LIMIT 0, 5
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: In getProductsBySalesOrderId() : Fetching products
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: Total number of products (): 0
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: In updateIntegrationSalesOrderByAccountName(252610, mos_status, Delivered) : Updating store (252610) column mos_status to Delivered
+-------------------------
+User: Cloud1 - August 3, 2014, 3:54 pm
+File: phpcronjob2
+Message: {"message":"In getSalesOrdersCountSet() : No Sales Order Found for SET!","mos":{"count":2,"accounts":{"252610":{"status":true},"":{"count":0,"file":"XML.GZ.FTP.IN.BST.201408031554."}},"message":"2 number of accounts processed for MOS files."},"alertEmailSales":"Mail sent successfully "}
+-------------------------
+User: Cloud1 - August 3, 2014, 3:55 pm
+File: phpcronjob3
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - August 3, 2014, 3:55 pm
+File: phpcronjob3
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 3:55 pm
+File: phpcronjob3
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 3:55 pm
+File: phpcronjob3
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 3:55 pm
+File: phpcronjob3
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 3:55 pm
+File: phpcronjob3
+Message: message queue is empty.
+-------------------------
+User: Cloud1 - August 3, 2014, 3:55 pm
+File: phpcronjob3
+Message: message queue is empty.
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob1
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob1
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid FROM vtiger_salesorder SO WHERE SO.sostatus IN ('Created','Approved')
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob1
+Message: Total number of order : 1
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 5
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob1
+Message: No of salesOrder: 1
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12347","salesorder_no":"ORD6213","cf_650":"Yes","cf_651":"Yes","accountname":"252610","contactid":"264","duedate":"2014-08-03","sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6213)
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob1
+Message: Total number of products (ORD6213): 1
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob1
+Message: In createIntegrationProduct(1777) Preparing insert product query.
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob1
+Message: In createIntegrationProduct(1777) Inserting products 
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob1
+Message: Updating sales order (12347) Delivered
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob1
+Message: Creating sales order: {"count":1,"salesorders":{"ORD6213":{"count":1,"products":{"297060":{"qtn":"4.000","status":true}},"status":true}},"message":"1 number of sales orders processed.","alertEmailSales":"Mail sent successfully "}
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob2
+Message: Connected with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob2
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon _sThree
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob2
+Message: Connected with Amazon _sThree
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Preparing sales order query
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Executing Query: SELECT * FROM sales_orders SO 
+            WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+            LIMIT 0, 5
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(1777) : Fetching products
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob2
+Message: Total number of products (1777): 1
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201408031557.252610 content generated
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201408031557.252610 at every 80 chars
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201408031557.252610 contents: HEADERGIZUR           2014080315577511M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776213+226140805+039140803+040776213+189297060004+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - August 3, 2014, 3:57 pm
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - August 3, 2014, 3:58 pm
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 3:58 pm
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(1777, Delivered) : Updating sales order (1777) column set_status to Delivered
+-------------------------
+User: Cloud1 - August 3, 2014, 3:58 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 3:58 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.mos_status IN ('Created','Approved') AND SO.mos = 'Yes'
+-------------------------
+User: Cloud1 - August 3, 2014, 3:58 pm
+File: phpcronjob2
+Message: In getAccountsForMos() : Preparing sales order query
+-------------------------
+User: Cloud1 - August 3, 2014, 3:58 pm
+File: phpcronjob2
+Message: In getAccountsForMos() : Executing Query: SELECT DISTINCT SO.accountname FROM sales_orders SO
+            WHERE SO.mos_status IN ('Created','Approved') AND SO.mos = 'Yes'
+            LIMIT 0, 5
+-------------------------
+User: Cloud1 - August 3, 2014, 3:58 pm
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - August 3, 2014, 3:58 pm
+File: phpcronjob2
+Message: In getProductsBySalesOrderId() : Fetching products
+-------------------------
+User: Cloud1 - August 3, 2014, 3:58 pm
+File: phpcronjob2
+Message: Total number of products (): 0
+-------------------------
+User: Cloud1 - August 3, 2014, 3:58 pm
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - August 3, 2014, 3:58 pm
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - August 3, 2014, 3:58 pm
+File: phpcronjob2
+Message: In updateIntegrationSalesOrderByAccountName(252610, mos_status, Delivered) : Updating store (252610) column mos_status to Delivered
+-------------------------
+User: Cloud1 - August 3, 2014, 3:58 pm
+File: phpcronjob2
+Message: {"set":{"count":1,"salesorders":{"ORD6213":{"status":true,"count":1,"file":"SET.GZ.FTP.IN.BST.201408031557.252610"}},"message":"1 number of sales orders processed for SET files."},"mos":{"count":1,"accounts":{"252610":{"status":true},"":{"count":0,"file":"XML.GZ.FTP.IN.BST.201408031558."}},"message":"1 number of accounts processed for MOS files."},"alertEmailSales":"Mail sent successfully "}
+-------------------------
+User: Cloud1 - August 3, 2014, 3:58 pm
+File: phpcronjob3
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - August 3, 2014, 3:58 pm
+File: phpcronjob3
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 3:58 pm
+File: phpcronjob3
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 3:58 pm
+File: phpcronjob3
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 3:58 pm
+File: phpcronjob3
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 3:59 pm
+File: phpcronjob3
+Message: Number of messages found in message queue : 2.
+-------------------------
+User: Cloud1 - August 3, 2014, 3:59 pm
+File: phpcronjob3
+Message: Get the single message from the message queue
+-------------------------
+User: Cloud1 - August 3, 2014, 3:59 pm
+File: phpcronjob3
+Message: Message received from the message queue server
+-------------------------
+User: Cloud1 - August 3, 2014, 3:59 pm
+File: phpcronjob3
+Message: Message Received: {"file":"SET.GZ.FTP.IN.BST.201408031557.252610","content":"HEADERGIZUR           2014080315577511M256      RUTIN   .130KF27777100   mottagn\r\ning initierad                                                                   \r\n      0012526101+03751+038776213+226140805+039140803+040776213+189297060004+C   \r\n      RUTIN   .130KF27777100   Mottagning avslutad    BYTES\/BLOCKS\/RETRIES=1084 \r\n\/5    \/0.","type":"SET"}
+-------------------------
+User: Cloud1 - August 3, 2014, 3:59 pm
+File: phpcronjob3
+Message: Deleting message from message queue : SET.GZ.FTP.IN.BST.201408031557.252610.
+-------------------------
+User: Cloud1 - August 3, 2014, 3:59 pm
+File: phpcronjob3
+Message: Deleted message Response : {"header":{"server":"Server","date":"Sun, 03 Aug 2014 16:01:18 GMT","content-type":"text\/xml","content-length":"215","connection":"keep-alive","x-amzn-requestid":"48f1050c-9adc-55e0-b680-4954c5d2d37b","_info":{"url":"https:\/\/sqs.eu-west-1.amazonaws.com\/065717488322\/cikab_queue","content_type":"text\/xml","http_code":200,"header_size":197,"request_size":1201,"filetime":-1,"ssl_verify_result":0,"redirect_count":0,"total_time":1.179669,"namelookup_time":2.5e-5,"connect_time":0.249329,"pretransfer_time":0.829704,"size_upload":556,"size_download":215,"speed_download":182,"speed_upload":471,"download_content_length":215,"upload_content_length":556,"starttransfer_time":1.179623,"redirect_time":0,"certinfo":[],"primary_ip":"178.236.6.180","primary_port":443,"local_ip":"115.245.155.228","local_port":51761,"redirect_url":"","method":"POST"},"x-aws-stringtosign":"POST\nsqs.eu-west-1.amazonaws.com\n\/065717488322\/cikab_queue\nAWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNv9VUWO%2BU492QgsliRxgvvYZZz3Vpte7nBK%2Figvb1pQoPWtz0pzUK3P%2F%2BS3hj6WEy%2B8TjG0r7g1tjJq2fIvNog9VottmC%2Fa8zma0Lmtng%2FGxaBOcdUXaDCW222J0LM0nvD8ayKYYFiaK746Ue06%2BdeovCKfhFCincR5WwRUWPA6t6iXoGeHny3fZKyaMkvYVn2ls9m1lKY%2F3uVueWC7Lu5I0DZI8MB2etVaa%2FK9fW4s0kKflJmfqDPxPNEdjg%2FG%2FegbT1F0xRvMHCLwwJ0SuVuz%2FmLjSzHD51A%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-08-03T15%3A59%3A04Z&Version=2011-10-01","x-aws-request-headers":{"Content-Type":"application\/x-www-form-urlencoded; charset=utf-8","Expect":""},"x-aws-body":"AWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNv9VUWO%2BU492QgsliRxgvvYZZz3Vpte7nBK%2Figvb1pQoPWtz0pzUK3P%2F%2BS3hj6WEy%2B8TjG0r7g1tjJq2fIvNog9VottmC%2Fa8zma0Lmtng%2FGxaBOcdUXaDCW222J0LM0nvD8ayKYYFiaK746Ue06%2BdeovCKfhFCincR5WwRUWPA6t6iXoGeHny3fZKyaMkvYVn2ls9m1lKY%2F3uVueWC7Lu5I0DZI8MB2etVaa%2FK9fW4s0kKflJmfqDPxPNEdjg%2FG%2FegbT1F0xRvMHCLwwJ0SuVuz%2FmLjSzHD51A%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-08-03T15%3A59%3A04Z&Version=2011-10-01&Signature=cdkbEddIF2b33ju2unu4ZwLX9ipQCybDh2FRjxbAe6Y%3D"},"body":{"@attributes":{"ns":"http:\/\/queue.amazonaws.com\/doc\/2011-10-01\/"},"ResponseMetadata":{"RequestId":"48f1050c-9adc-55e0-b680-4954c5d2d37b"}},"status":200}
+-------------------------
+User: Cloud1 - August 3, 2014, 3:59 pm
+File: phpcronjob3
+Message: Get the single message from the message queue
+-------------------------
+User: Cloud1 - August 3, 2014, 3:59 pm
+File: phpcronjob3
+Message: Message received from the message queue server
+-------------------------
+User: Cloud1 - August 3, 2014, 3:59 pm
+File: phpcronjob3
+Message: Message Received: {"file":"XML.GZ.FTP.IN.BST.201408031558.","content":"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<order:orderMessage xmlns:order=\"urn:gs1:ecom:order:xsd:3\" xmlns:sh=\"http:\/\/www.unece.org\/cefact\/namespaces\/StandardBusinessDocumentHeader\" xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\" xsi:schemaLocation=\"urn:gs1:ecom:order:xsd:3 ..\/Schemas\/gs1\/ecom\/Order.xsd\"><order><creationDateTime>2011-03-11T11:00:00.000-05:00<\/creationDateTime><orderIdentification><entityIdentification>7777<\/entityIdentification><\/orderIdentification><orderTypeCode>220<\/orderTypeCode><buyer><gln>NNNNNN<\/gln><\/buyer><orderLogisticalInformation><orderLogisticalDateInformation><requestedDeliveryDateTime>2014-12-31<\/requestedDeliveryDateTime><\/orderLogisticalDateInformation><\/orderLogisticalInformation><additionalOrderInstruction>201452<\/additionalOrderInstruction><orderLineItem><lineItemNumber>1<\/lineItemNumber><transactionalTradeItem><gtin>NNNNNN<\/gtin><\/transactionalTradeItem><materialSpecification>NNN-NNNN-NNNN<\/materialSpecification><requestedQuantity measurementUnitCode=\"CAR\">NNN<\/requestedQuantity><\/orderLineItem><\/order><\/order:orderMessage>\n","type":"XML"}
+-------------------------
+User: Cloud1 - August 3, 2014, 3:59 pm
+File: phpcronjob3
+Message: Deleting message from message queue : XML.GZ.FTP.IN.BST.201408031558..
+-------------------------
+User: Cloud1 - August 3, 2014, 3:59 pm
+File: phpcronjob3
+Message: Deleted message Response : {"header":{"server":"Server","date":"Sun, 03 Aug 2014 16:01:21 GMT","content-type":"text\/xml","content-length":"215","connection":"keep-alive","x-amzn-requestid":"a43c7845-b677-52de-81d7-341de9669e66","_info":{"url":"https:\/\/sqs.eu-west-1.amazonaws.com\/065717488322\/cikab_queue","content_type":"text\/xml","http_code":200,"header_size":197,"request_size":1201,"filetime":-1,"ssl_verify_result":0,"redirect_count":0,"total_time":1.28006,"namelookup_time":2.3e-5,"connect_time":0.259555,"pretransfer_time":0.889829,"size_upload":556,"size_download":215,"speed_download":167,"speed_upload":434,"download_content_length":215,"upload_content_length":556,"starttransfer_time":1.280026,"redirect_time":0,"certinfo":[],"primary_ip":"178.236.6.180","primary_port":443,"local_ip":"115.245.155.228","local_port":51763,"redirect_url":"","method":"POST"},"x-aws-stringtosign":"POST\nsqs.eu-west-1.amazonaws.com\n\/065717488322\/cikab_queue\nAWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNvj6%2FbOijw45ggsliRxgvvYbKLtpP%2BLptej8lb5qEdsv1Yah1mtymrg0EN1N9Kjrpg%2B2Ha9uPcAxWRQS%2BhuU6FPJ0%2BcIe3nLssqOHIhATbEz%2BfODePhxGKDOaYd6iK2ka2PdByrI9NI8OhTf2uLb%2F9hQShPCNFcl%2FY4YvncMn7SFlsNo6BAfGusR5IY6ULPIsEQb2pr9fV%2BelGm1GO6HbnO%2B7MwH83KioBd4H7m6Ff%2BZ0zOR3nbaEGGPNEdjg%2FG%2FeiipIggAzHAUIj4KbnXkaytCxL9Iiy7Y2k%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-08-03T15%3A59%3A06Z&Version=2011-10-01","x-aws-request-headers":{"Content-Type":"application\/x-www-form-urlencoded; charset=utf-8","Expect":""},"x-aws-body":"AWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNvj6%2FbOijw45ggsliRxgvvYbKLtpP%2BLptej8lb5qEdsv1Yah1mtymrg0EN1N9Kjrpg%2B2Ha9uPcAxWRQS%2BhuU6FPJ0%2BcIe3nLssqOHIhATbEz%2BfODePhxGKDOaYd6iK2ka2PdByrI9NI8OhTf2uLb%2F9hQShPCNFcl%2FY4YvncMn7SFlsNo6BAfGusR5IY6ULPIsEQb2pr9fV%2BelGm1GO6HbnO%2B7MwH83KioBd4H7m6Ff%2BZ0zOR3nbaEGGPNEdjg%2FG%2FeiipIggAzHAUIj4KbnXkaytCxL9Iiy7Y2k%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-08-03T15%3A59%3A06Z&Version=2011-10-01&Signature=XCUP6bdvfooeMarPkZO9iREs6OLpdjZHnUnde845Qr0%3D"},"body":{"@attributes":{"ns":"http:\/\/queue.amazonaws.com\/doc\/2011-10-01\/"},"ResponseMetadata":{"RequestId":"a43c7845-b677-52de-81d7-341de9669e66"}},"status":200}
+-------------------------
+User: Cloud1 - August 3, 2014, 3:59 pm
+File: phpcronjob3
+Message: {"files":{"SET.GZ.FTP.IN.BST.201408031557.252610":{"status":true},"XML.GZ.FTP.IN.BST.201408031558.":{"status":true}},"message":"2 no of files processed.","alertEmailSales":"Mail sent successfully "}
+-------------------------
+User: Cloud1 - August 3, 2014, 4:06 pm
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - August 3, 2014, 4:06 pm
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - August 3, 2014, 4:06 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 4:06 pm
+File: phpcronjob2
+Message: Connected with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 4:06 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 4:06 pm
+File: phpcronjob2
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 4:06 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon _sThree
+-------------------------
+User: Cloud1 - August 3, 2014, 4:06 pm
+File: phpcronjob2
+Message: Connected with Amazon _sThree
+-------------------------
+User: Cloud1 - August 3, 2014, 4:06 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 4:06 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+-------------------------
+User: Cloud1 - August 3, 2014, 4:06 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : No Sales Order Found for SET!
+-------------------------
+User: Cloud1 - August 3, 2014, 4:06 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 4:06 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.mos_status IN ('Created','Approved') AND SO.mos = 'Yes'
+-------------------------
+User: Cloud1 - August 3, 2014, 4:06 pm
+File: phpcronjob2
+Message: In getAccountsForMos() : Preparing sales order query
+-------------------------
+User: Cloud1 - August 3, 2014, 4:06 pm
+File: phpcronjob2
+Message: In getAccountsForMos() : Executing Query: SELECT DISTINCT SO.accountname FROM sales_orders SO
+            WHERE SO.mos_status IN ('Created','Approved') AND SO.mos = 'Yes'
+            LIMIT 0, 5
+-------------------------
+User: Cloud1 - August 3, 2014, 4:06 pm
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - August 3, 2014, 4:06 pm
+File: phpcronjob2
+Message: In getProductsBySalesOrderId() : Fetching products
+-------------------------
+User: Cloud1 - August 3, 2014, 4:06 pm
+File: phpcronjob2
+Message: Total number of products (): 0
+-------------------------
+User: Cloud1 - August 3, 2014, 4:06 pm
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - August 3, 2014, 4:06 pm
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - August 3, 2014, 4:06 pm
+File: phpcronjob2
+Message: In updateIntegrationSalesOrderByAccountName(252610, mos_status, Delivered) : Updating store (252610) column mos_status to Delivered
+-------------------------
+User: Cloud1 - August 3, 2014, 4:06 pm
+File: phpcronjob2
+Message: {"message":"In getSalesOrdersCountSet() : No Sales Order Found for SET!","mos":{"count":1,"accounts":{"252610":{"status":true},"":{"count":0,"file":"XML.GZ.FTP.IN.BST.201408031606."}},"message":"1 number of accounts processed for MOS files."},"alertEmailSales":"Mail sent successfully "}
+-------------------------
+User: Cloud1 - August 3, 2014, 4:10 pm
+File: phpcronjob3
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - August 3, 2014, 4:10 pm
+File: phpcronjob3
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 4:10 pm
+File: phpcronjob3
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 4:10 pm
+File: phpcronjob3
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 4:10 pm
+File: phpcronjob3
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 4:10 pm
+File: phpcronjob3
+Message: Number of messages found in message queue : 1.
+-------------------------
+User: Cloud1 - August 3, 2014, 4:10 pm
+File: phpcronjob3
+Message: Get the single message from the message queue
+-------------------------
+User: Cloud1 - August 3, 2014, 4:10 pm
+File: phpcronjob3
+Message: Message received from the message queue server
+-------------------------
+User: Cloud1 - August 3, 2014, 4:10 pm
+File: phpcronjob3
+Message: Message Received: {"file":"XML.GZ.FTP.IN.BST.201408031606.","content":"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<order:orderMessage xmlns:order=\"urn:gs1:ecom:order:xsd:3\" xmlns:sh=\"http:\/\/www.unece.org\/cefact\/namespaces\/StandardBusinessDocumentHeader\" xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\" xsi:schemaLocation=\"urn:gs1:ecom:order:xsd:3 ..\/Schemas\/gs1\/ecom\/Order.xsd\"><order><creationDateTime>2011-03-11T11:00:00.000-05:00<\/creationDateTime><orderIdentification><entityIdentification>7777<\/entityIdentification><\/orderIdentification><orderTypeCode>220<\/orderTypeCode><buyer><gln>NNNNNN<\/gln><\/buyer><orderLogisticalInformation><orderLogisticalDateInformation><requestedDeliveryDateTime>2014-12-31<\/requestedDeliveryDateTime><\/orderLogisticalDateInformation><\/orderLogisticalInformation><additionalOrderInstruction>201452<\/additionalOrderInstruction><orderLineItem><lineItemNumber>1<\/lineItemNumber><transactionalTradeItem><gtin>NNNNNN<\/gtin><\/transactionalTradeItem><materialSpecification>NNN-NNNN-NNNN<\/materialSpecification><requestedQuantity measurementUnitCode=\"CAR\">NNN<\/requestedQuantity><\/orderLineItem><\/order><\/order:orderMessage>\n","type":"XML"}
+-------------------------
+User: Cloud1 - August 3, 2014, 4:10 pm
+File: phpcronjob3
+Message: Deleting message from message queue : XML.GZ.FTP.IN.BST.201408031606..
+-------------------------
+User: Cloud1 - August 3, 2014, 4:10 pm
+File: phpcronjob3
+Message: Deleted message Response : {"header":{"server":"Server","date":"Sun, 03 Aug 2014 16:12:54 GMT","content-type":"text\/xml","content-length":"215","connection":"keep-alive","x-amzn-requestid":"1c83123d-ca93-519b-b867-5e65ab556d4d","_info":{"url":"https:\/\/sqs.eu-west-1.amazonaws.com\/065717488322\/cikab_queue","content_type":"text\/xml","http_code":200,"header_size":197,"request_size":1195,"filetime":-1,"ssl_verify_result":0,"redirect_count":0,"total_time":1.269677,"namelookup_time":2.0e-5,"connect_time":0.239555,"pretransfer_time":0.949617,"size_upload":550,"size_download":215,"speed_download":169,"speed_upload":433,"download_content_length":215,"upload_content_length":550,"starttransfer_time":1.269641,"redirect_time":0,"certinfo":[],"primary_ip":"178.236.6.180","primary_port":443,"local_ip":"115.245.155.228","local_port":51956,"redirect_url":"","method":"POST"},"x-aws-stringtosign":"POST\nsqs.eu-west-1.amazonaws.com\n\/065717488322\/cikab_queue\nAWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNtRowQ7gTmvBggsliRxgvvYthH2QzA01X67lobpthhdlXopvwLReyr6%2F%2BS3hj6WEy87nYfZJOEz3TNsBrxNaX0Bo63Lqhy2ulwVyTKTeff%2FVASCopzwpWkbhwzo5OcIr3l%2FbRaEGRTTHNCwC5l3THP2mJJ5Lc2UiDJP4zCGKbLtzNOMOABObHC24iL9AwbT2OQIxZ9ZYKRWs6rGPF7y30FNCgtgqHarW4pLBLBytv3DQBmzzfq4cf%2Bu54p6tGFH%2BBHMSBtxOA3qdj%2BbuuLnLJIEIHKI4glpGPA%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-08-03T16%3A10%3A40Z&Version=2011-10-01","x-aws-request-headers":{"Content-Type":"application\/x-www-form-urlencoded; charset=utf-8","Expect":""},"x-aws-body":"AWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNtRowQ7gTmvBggsliRxgvvYthH2QzA01X67lobpthhdlXopvwLReyr6%2F%2BS3hj6WEy87nYfZJOEz3TNsBrxNaX0Bo63Lqhy2ulwVyTKTeff%2FVASCopzwpWkbhwzo5OcIr3l%2FbRaEGRTTHNCwC5l3THP2mJJ5Lc2UiDJP4zCGKbLtzNOMOABObHC24iL9AwbT2OQIxZ9ZYKRWs6rGPF7y30FNCgtgqHarW4pLBLBytv3DQBmzzfq4cf%2Bu54p6tGFH%2BBHMSBtxOA3qdj%2BbuuLnLJIEIHKI4glpGPA%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-08-03T16%3A10%3A40Z&Version=2011-10-01&Signature=W%2BEveOJDmnX9Nr%2B0xonwz5rDZp%2BGdABSDfp8ImPeofw%3D"},"body":{"@attributes":{"ns":"http:\/\/queue.amazonaws.com\/doc\/2011-10-01\/"},"ResponseMetadata":{"RequestId":"1c83123d-ca93-519b-b867-5e65ab556d4d"}},"status":200}
+-------------------------
+User: Cloud1 - August 3, 2014, 4:10 pm
+File: phpcronjob3
+Message: Error successfully delivered sales: 
+                 2 and total fetched messages from sqs:
+                  1  are different!  
+-------------------------
+User: Cloud1 - August 3, 2014, 4:10 pm
+File: phpcronjob3
+Message: {"files":{"XML.GZ.FTP.IN.BST.201408031606.":{"status":true}},"message":"1 no of files processed.","alertEmailSales":"Mail sent successfully "}
+-------------------------
+User: Cloud1 - August 3, 2014, 4:38 pm
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - August 3, 2014, 4:38 pm
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - August 3, 2014, 4:38 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 4:38 pm
+File: phpcronjob2
+Message: Connected with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 4:38 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 4:38 pm
+File: phpcronjob2
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 4:38 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon _sThree
+-------------------------
+User: Cloud1 - August 3, 2014, 4:38 pm
+File: phpcronjob2
+Message: Connected with Amazon _sThree
+-------------------------
+User: Cloud1 - August 3, 2014, 4:38 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 4:38 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+-------------------------
+User: Cloud1 - August 3, 2014, 4:38 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : No Sales Order Found for SET!
+-------------------------
+User: Cloud1 - August 3, 2014, 4:38 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 4:38 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.mos_status IN ('Created','Approved') AND SO.mos = 'Yes'
+-------------------------
+User: Cloud1 - August 3, 2014, 4:38 pm
+File: phpcronjob2
+Message: In getAccountsForMos() : Preparing sales order query
+-------------------------
+User: Cloud1 - August 3, 2014, 4:38 pm
+File: phpcronjob2
+Message: In getAccountsForMos() : Executing Query: SELECT DISTINCT SO.accountname FROM sales_orders SO
+            WHERE SO.mos_status IN ('Created','Approved') AND SO.mos = 'Yes'
+            LIMIT 0, 5
+-------------------------
+User: Cloud1 - August 3, 2014, 4:38 pm
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - August 3, 2014, 4:38 pm
+File: phpcronjob2
+Message: In getProductsBySalesOrderId() : Fetching products
+-------------------------
+User: Cloud1 - August 3, 2014, 4:38 pm
+File: phpcronjob2
+Message: Total number of products (): 0
+-------------------------
+User: Cloud1 - August 3, 2014, 4:38 pm
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - August 3, 2014, 4:38 pm
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - August 3, 2014, 4:38 pm
+File: phpcronjob2
+Message: In updateIntegrationSalesOrderByAccountName(252610, mos_status, Delivered) : Updating store (252610) column mos_status to Delivered
+-------------------------
+User: Cloud1 - August 3, 2014, 4:38 pm
+File: phpcronjob2
+Message: {"message":"In getSalesOrdersCountSet() : No Sales Order Found for SET!","mos":{"count":1,"accounts":{"252610":{"status":true},"":{"file":"XML.GZ.FTP.IN.BST..252610"}},"message":"1 number of accounts processed for MOS files."},"alertEmailSales":"Mail sent successfully "}
+-------------------------
+User: Cloud1 - August 3, 2014, 4:47 pm
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - August 3, 2014, 4:47 pm
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - August 3, 2014, 4:47 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 4:47 pm
+File: phpcronjob2
+Message: Connected with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 4:47 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 4:47 pm
+File: phpcronjob2
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 4:47 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon _sThree
+-------------------------
+User: Cloud1 - August 3, 2014, 4:47 pm
+File: phpcronjob2
+Message: Connected with Amazon _sThree
+-------------------------
+User: Cloud1 - August 3, 2014, 4:47 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 4:47 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+-------------------------
+User: Cloud1 - August 3, 2014, 4:47 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : No Sales Order Found for SET!
+-------------------------
+User: Cloud1 - August 3, 2014, 4:47 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 4:47 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.mos_status IN ('Created','Approved') AND SO.mos = 'Yes'
+-------------------------
+User: Cloud1 - August 3, 2014, 4:47 pm
+File: phpcronjob2
+Message: In getAccountsForMos() : Preparing sales order query
+-------------------------
+User: Cloud1 - August 3, 2014, 4:47 pm
+File: phpcronjob2
+Message: In getAccountsForMos() : Executing Query: SELECT DISTINCT SO.accountname FROM sales_orders SO
+            WHERE SO.mos_status IN ('Created','Approved') AND SO.mos = 'Yes'
+            LIMIT 0, 5
+-------------------------
+User: Cloud1 - August 3, 2014, 4:47 pm
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - August 3, 2014, 4:47 pm
+File: phpcronjob2
+Message: In getProductsBySalesOrderId() : Fetching products
+-------------------------
+User: Cloud1 - August 3, 2014, 4:47 pm
+File: phpcronjob2
+Message: Total number of products (): 0
+-------------------------
+User: Cloud1 - August 3, 2014, 4:47 pm
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - August 3, 2014, 4:47 pm
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - August 3, 2014, 4:47 pm
+File: phpcronjob2
+Message: In updateIntegrationSalesOrderByAccountName(252610, mos_status, Delivered) : Updating store (252610) column mos_status to Delivered
+-------------------------
+User: Cloud1 - August 3, 2014, 4:47 pm
+File: phpcronjob2
+Message: {"message":"In getSalesOrdersCountSet() : No Sales Order Found for SET!","mos":{"count":1,"accounts":{"252610":{"status":true},"":{"file":"XML.GZ.FTP.IN.BST.201408031647.252610"}},"message":"1 number of accounts processed for MOS files."},"alertEmailSales":"Mail sent successfully "}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:04 pm
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - August 3, 2014, 5:05 pm
+File: 4
+Message: Unable to connect with integration DB
+-------------------------
+User: Cloud1 - August 3, 2014, 5:05 pm
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - August 3, 2014, 5:05 pm
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - August 3, 2014, 5:05 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 5:05 pm
+File: phpcronjob2
+Message: Connected with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 5:05 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 5:05 pm
+File: phpcronjob2
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 5:05 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon _sThree
+-------------------------
+User: Cloud1 - August 3, 2014, 5:05 pm
+File: phpcronjob2
+Message: Connected with Amazon _sThree
+-------------------------
+User: Cloud1 - August 3, 2014, 5:05 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 5:05 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+-------------------------
+User: Cloud1 - August 3, 2014, 5:05 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : No Sales Order Found for SET!
+-------------------------
+User: Cloud1 - August 3, 2014, 5:05 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 5:05 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.mos_status IN ('Created','Approved') AND SO.mos = 'Yes'
+-------------------------
+User: Cloud1 - August 3, 2014, 5:05 pm
+File: phpcronjob2
+Message: In getAccountsForMos() : Preparing sales order query
+-------------------------
+User: Cloud1 - August 3, 2014, 5:05 pm
+File: phpcronjob2
+Message: In getAccountsForMos() : Executing Query: SELECT DISTINCT SO.accountname FROM sales_orders SO
+            WHERE SO.mos_status IN ('Created','Approved') AND SO.mos = 'Yes'
+            LIMIT 0, 5
+-------------------------
+User: Cloud1 - August 3, 2014, 5:05 pm
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - August 3, 2014, 5:05 pm
+File: phpcronjob2
+Message: In getProductsBySalesOrderId() : Fetching products
+-------------------------
+User: Cloud1 - August 3, 2014, 5:05 pm
+File: phpcronjob2
+Message: Total number of products (): 0
+-------------------------
+User: Cloud1 - August 3, 2014, 5:05 pm
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - August 3, 2014, 5:05 pm
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - August 3, 2014, 5:06 pm
+File: phpcronjob2
+Message: In updateIntegrationSalesOrderByAccountName(252610, mos_status, Delivered) : Updating store (252610) column mos_status to Delivered
+-------------------------
+User: Cloud1 - August 3, 2014, 5:06 pm
+File: phpcronjob2
+Message: {"message":"In getSalesOrdersCountSet() : No Sales Order Found for SET!","mos":{"count":1,"accounts":{"252610":{"status":true},"":{"file":"XML.GZ.FTP.IN.BST.201408031705.252610"}},"message":"1 number of accounts processed for MOS files."}}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:19 pm
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud1 - August 3, 2014, 5:19 pm
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud1 - August 3, 2014, 5:19 pm
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - August 3, 2014, 5:19 pm
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - August 3, 2014, 5:19 pm
+File: phpcronjob1
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 5:19 pm
+File: phpcronjob1
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 5:19 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 5:19 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid FROM vtiger_salesorder SO WHERE SO.sostatus IN ('Created','Approved')
+-------------------------
+User: Cloud1 - August 3, 2014, 5:19 pm
+File: phpcronjob1
+Message: Total number of order : 1
+-------------------------
+User: Cloud1 - August 3, 2014, 5:19 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud1 - August 3, 2014, 5:19 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 5
+-------------------------
+User: Cloud1 - August 3, 2014, 5:19 pm
+File: phpcronjob1
+Message: No of salesOrder: 1
+-------------------------
+User: Cloud1 - August 3, 2014, 5:19 pm
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - August 3, 2014, 5:19 pm
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12347","salesorder_no":"ORD6213","cf_650":"Yes","cf_651":"Yes","accountname":"252610","contactid":"264","duedate":"2014-08-03","sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:19 pm
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6213)
+-------------------------
+User: Cloud1 - August 3, 2014, 5:19 pm
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - August 3, 2014, 5:19 pm
+File: phpcronjob1
+Message: Total number of products (ORD6213): 1
+-------------------------
+User: Cloud1 - August 3, 2014, 5:19 pm
+File: phpcronjob1
+Message: In createIntegrationProduct(1778) Preparing insert product query.
+-------------------------
+User: Cloud1 - August 3, 2014, 5:19 pm
+File: phpcronjob1
+Message: In createIntegrationProduct(1778) Inserting products 
+-------------------------
+User: Cloud1 - August 3, 2014, 5:19 pm
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - August 3, 2014, 5:19 pm
+File: phpcronjob1
+Message: Updating sales order (12347) Delivered
+-------------------------
+User: Cloud1 - August 3, 2014, 5:19 pm
+File: phpcronjob1
+Message: Creating sales order: {"count":1,"salesorders":{"ORD6213":{"count":1,"products":{"297060":{"qtn":"4.000","status":true}},"status":true}},"message":"1 number of sales orders processed.","alertEmailSales":"Mail sent successfully "}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: Connected with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon _sThree
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: Connected with Amazon _sThree
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Preparing sales order query
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Executing Query: SELECT * FROM sales_orders SO 
+            WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+            LIMIT 0, 5
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(1778) : Fetching products
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: Total number of products (1778): 1
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201408031720.252610 content generated
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201408031720.252610 at every 80 chars
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201408031720.252610 contents: HEADERGIZUR           2014080317207691M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776213+226140805+039140803+040776213+189297060004+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(1778, Delivered) : Updating sales order (1778) column set_status to Delivered
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.mos_status IN ('Created','Approved') AND SO.mos = 'Yes'
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: getSalesOrdersForXml() : Preparing sales order query
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: In getSalesOrdersForXml() : Executing Query: SELECT * FROM sales_orders SO 
+            WHERE SO.mos_status IN ('Created','Approved') AND SO.mos = 'Yes'
+            LIMIT 0, 5
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(1778) : Fetching products
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: Total number of products (1778): 1
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: In updateIntegrationSalesOrderByAccountName(252610, mos_status, Delivered) : Updating store (252610) column mos_status to Delivered
+-------------------------
+User: Cloud1 - August 3, 2014, 5:20 pm
+File: phpcronjob2
+Message: {"set":{"count":1,"salesorders":{"ORD6213":{"status":true,"count":1,"file":"SET.GZ.FTP.IN.BST.201408031720.252610"}},"message":"1 number of sales orders processed for SET files."},"mos":{"count":1,"accounts":{"252610":{"status":true},"ORD6213":{"file":"XML.GZ.FTP.IN.BST.201408031720.252610"}},"message":"1 number of accounts processed for MOS files."}}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Number of messages found in message queue : 5.
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Get the single message from the message queue
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Message received from the message queue server
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Message Received: {"file":"XML.GZ.FTP.IN.BST.201408031705.252610","content":"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<order:orderMessage xmlns:order=\"urn:gs1:ecom:order:xsd:3\" xmlns:sh=\"http:\/\/www.unece.org\/cefact\/namespaces\/StandardBusinessDocumentHeader\" xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\" xsi:schemaLocation=\"urn:gs1:ecom:order:xsd:3 ..\/Schemas\/gs1\/ecom\/Order.xsd\"><order><creationDateTime>2011-03-11T11:00:00.000-05:00<\/creationDateTime><orderIdentification><entityIdentification>7777 7777<\/entityIdentification><\/orderIdentification><orderTypeCode>220<\/orderTypeCode><buyer><gln>252610<\/gln><\/buyer><orderLogisticalInformation><orderLogisticalDateInformation><requestedDeliveryDateTime>2014-08-05<\/requestedDeliveryDateTime><\/orderLogisticalDateInformation><\/orderLogisticalInformation><additionalOrderInstruction>2014 32<\/additionalOrderInstruction><orderLineItem><lineItemNumber>1<\/lineItemNumber><transactionalTradeItem><gtin><\/gtin><\/transactionalTradeItem><materialSpecification>NNN-NNNN-NNNN<\/materialSpecification><requestedQuantity measurementUnitCode=\"CAR\">NNN<\/requestedQuantity><\/orderLineItem><\/order><\/order:orderMessage>\n","type":"XML"}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Deleting message from message queue : XML.GZ.FTP.IN.BST.201408031705.252610.
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Deleted message Response : {"header":{"server":"Server","date":"Sun, 03 Aug 2014 17:25:37 GMT","content-type":"text\/xml","content-length":"215","connection":"keep-alive","x-amzn-requestid":"e1c72926-d249-594b-bfab-657ea098c6e5","_info":{"url":"https:\/\/sqs.eu-west-1.amazonaws.com\/065717488322\/cikab_queue","content_type":"text\/xml","http_code":200,"header_size":197,"request_size":1197,"filetime":-1,"ssl_verify_result":0,"redirect_count":0,"total_time":1.868697,"namelookup_time":2.0e-5,"connect_time":0.258574,"pretransfer_time":1.078886,"size_upload":552,"size_download":215,"speed_download":115,"speed_upload":295,"download_content_length":215,"upload_content_length":552,"starttransfer_time":1.868658,"redirect_time":0,"certinfo":[],"primary_ip":"178.236.7.118","primary_port":443,"local_ip":"115.245.155.228","local_port":39411,"redirect_url":"","method":"POST"},"x-aws-stringtosign":"POST\nsqs.eu-west-1.amazonaws.com\n\/065717488322\/cikab_queue\nAWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNvj6%2FbOijw45ggsliRxgvvYlnaE9cOOKnKj8lb5qEdsv5pgQ6HT0R%2F60EN1N9Kjrpg%2B2Ha9uPcAxWRQS%2BhuU6FPJ0%2BcIe3nLssqOHIhATbEz%2BfODePhxGKDOaYd6iK2ka2PdByrI9NI8OhTf2uLb%2F9hQShPCNFcl%2FY4YvncMn7SFlsNo6BAfGusR5IY6ULPIsElDWwEMVRryD7PZz7C62bYLIzWvH5tv%2BbyJVUsRQvB%2BERquOuzzNzs5Gp6G4HwsAJ3gn7jINzDGWNFl4LvY5oWYFBOrtSbm9g%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-08-03T17%3A23%3A21Z&Version=2011-10-01","x-aws-request-headers":{"Content-Type":"application\/x-www-form-urlencoded; charset=utf-8","Expect":""},"x-aws-body":"AWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNvj6%2FbOijw45ggsliRxgvvYlnaE9cOOKnKj8lb5qEdsv5pgQ6HT0R%2F60EN1N9Kjrpg%2B2Ha9uPcAxWRQS%2BhuU6FPJ0%2BcIe3nLssqOHIhATbEz%2BfODePhxGKDOaYd6iK2ka2PdByrI9NI8OhTf2uLb%2F9hQShPCNFcl%2FY4YvncMn7SFlsNo6BAfGusR5IY6ULPIsElDWwEMVRryD7PZz7C62bYLIzWvH5tv%2BbyJVUsRQvB%2BERquOuzzNzs5Gp6G4HwsAJ3gn7jINzDGWNFl4LvY5oWYFBOrtSbm9g%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-08-03T17%3A23%3A21Z&Version=2011-10-01&Signature=U%2BvwnxvG7uzLmCNvqQg8SAQKn4Vn8PhED0gRH7yW8Pc%3D"},"body":{"@attributes":{"ns":"http:\/\/queue.amazonaws.com\/doc\/2011-10-01\/"},"ResponseMetadata":{"RequestId":"e1c72926-d249-594b-bfab-657ea098c6e5"}},"status":200}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Get the single message from the message queue
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Message received from the message queue server
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Message Received: {"file":"XML.GZ.FTP.IN.BST..252610","content":"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<order:orderMessage xmlns:order=\"urn:gs1:ecom:order:xsd:3\" xmlns:sh=\"http:\/\/www.unece.org\/cefact\/namespaces\/StandardBusinessDocumentHeader\" xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\" xsi:schemaLocation=\"urn:gs1:ecom:order:xsd:3 ..\/Schemas\/gs1\/ecom\/Order.xsd\"><order><creationDateTime>2011-03-11T11:00:00.000-05:00<\/creationDateTime><orderIdentification><entityIdentification>7777<\/entityIdentification><\/orderIdentification><orderTypeCode>220<\/orderTypeCode><buyer><gln>252610<\/gln><\/buyer><orderLogisticalInformation><orderLogisticalDateInformation><requestedDeliveryDateTime>2014-08-05<\/requestedDeliveryDateTime><\/orderLogisticalDateInformation><\/orderLogisticalInformation><additionalOrderInstruction>197042<\/additionalOrderInstruction><orderLineItem><lineItemNumber>1<\/lineItemNumber><transactionalTradeItem><gtin><\/gtin><\/transactionalTradeItem><materialSpecification>NNN-NNNN-NNNN<\/materialSpecification><requestedQuantity measurementUnitCode=\"CAR\">NNN<\/requestedQuantity><\/orderLineItem><\/order><\/order:orderMessage>\n","type":"XML"}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Deleting message from message queue : XML.GZ.FTP.IN.BST..252610.
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Deleted message Response : {"header":{"server":"Server","date":"Sun, 03 Aug 2014 17:25:40 GMT","content-type":"text\/xml","content-length":"215","connection":"keep-alive","x-amzn-requestid":"df419f1d-f842-56bc-8774-d3458a967432","_info":{"url":"https:\/\/sqs.eu-west-1.amazonaws.com\/065717488322\/cikab_queue","content_type":"text\/xml","http_code":200,"header_size":197,"request_size":1187,"filetime":-1,"ssl_verify_result":0,"redirect_count":0,"total_time":1.6293,"namelookup_time":2.4e-5,"connect_time":0.24913,"pretransfer_time":1.099458,"size_upload":542,"size_download":215,"speed_download":131,"speed_upload":332,"download_content_length":215,"upload_content_length":542,"starttransfer_time":1.629267,"redirect_time":0,"certinfo":[],"primary_ip":"178.236.7.118","primary_port":443,"local_ip":"115.245.155.228","local_port":39413,"redirect_url":"","method":"POST"},"x-aws-stringtosign":"POST\nsqs.eu-west-1.amazonaws.com\n\/065717488322\/cikab_queue\nAWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNu4uetfi3ehrQgsliRxgvvY78Ut1SIoDAvHK353KcqijvOA3ZO1TFut%2F%2BS3hj6WEy9RPCUs883HyOBNBKLfyx0yA31d3FdiW0ykxNIMe4GjSAhYNFHUY%2F2ioVLTkY1A63FWyHX13LTMXvGrdGr7MFXY9%2Ba%2BRGZL5V45dlLUu9pvC2vQWrnWDO2rZdPRXH6JB6YJa3WBuWOJzTFeKAm2Oib83GbkaLW5rTyaswFSRzcVb8tlhEo9J7ePCF1YhdUb2QzFTD3cUslHWH2Xr7XiUlayhrdV96t5PZQ%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-08-03T17%3A23%3A25Z&Version=2011-10-01","x-aws-request-headers":{"Content-Type":"application\/x-www-form-urlencoded; charset=utf-8","Expect":""},"x-aws-body":"AWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNu4uetfi3ehrQgsliRxgvvY78Ut1SIoDAvHK353KcqijvOA3ZO1TFut%2F%2BS3hj6WEy9RPCUs883HyOBNBKLfyx0yA31d3FdiW0ykxNIMe4GjSAhYNFHUY%2F2ioVLTkY1A63FWyHX13LTMXvGrdGr7MFXY9%2Ba%2BRGZL5V45dlLUu9pvC2vQWrnWDO2rZdPRXH6JB6YJa3WBuWOJzTFeKAm2Oib83GbkaLW5rTyaswFSRzcVb8tlhEo9J7ePCF1YhdUb2QzFTD3cUslHWH2Xr7XiUlayhrdV96t5PZQ%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-08-03T17%3A23%3A25Z&Version=2011-10-01&Signature=kTSTgzwylSsL9DMpg47eE9%2FON0WKqWhCoW96w8JZrsc%3D"},"body":{"@attributes":{"ns":"http:\/\/queue.amazonaws.com\/doc\/2011-10-01\/"},"ResponseMetadata":{"RequestId":"df419f1d-f842-56bc-8774-d3458a967432"}},"status":200}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Get the single message from the message queue
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Message received from the message queue server
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Message Received: {"file":"XML.GZ.FTP.IN.BST.201408031647.252610","content":"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<order:orderMessage xmlns:order=\"urn:gs1:ecom:order:xsd:3\" xmlns:sh=\"http:\/\/www.unece.org\/cefact\/namespaces\/StandardBusinessDocumentHeader\" xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\" xsi:schemaLocation=\"urn:gs1:ecom:order:xsd:3 ..\/Schemas\/gs1\/ecom\/Order.xsd\"><order><creationDateTime>2011-03-11T11:00:00.000-05:00<\/creationDateTime><orderIdentification><entityIdentification>7777<\/entityIdentification><\/orderIdentification><orderTypeCode>220<\/orderTypeCode><buyer><gln>252610<\/gln><\/buyer><orderLogisticalInformation><orderLogisticalDateInformation><requestedDeliveryDateTime>2014-08-05<\/requestedDeliveryDateTime><\/orderLogisticalDateInformation><\/orderLogisticalInformation><additionalOrderInstruction>201442<\/additionalOrderInstruction><orderLineItem><lineItemNumber>1<\/lineItemNumber><transactionalTradeItem><gtin><\/gtin><\/transactionalTradeItem><materialSpecification>NNN-NNNN-NNNN<\/materialSpecification><requestedQuantity measurementUnitCode=\"CAR\">NNN<\/requestedQuantity><\/orderLineItem><\/order><\/order:orderMessage>\n","type":"XML"}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Deleting message from message queue : XML.GZ.FTP.IN.BST.201408031647.252610.
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Deleted message Response : {"header":{"server":"Server","date":"Sun, 03 Aug 2014 17:25:44 GMT","content-type":"text\/xml","content-length":"215","connection":"keep-alive","x-amzn-requestid":"6fe950b9-4bae-58df-bebb-1ce13976e719","_info":{"url":"https:\/\/sqs.eu-west-1.amazonaws.com\/065717488322\/cikab_queue","content_type":"text\/xml","http_code":200,"header_size":197,"request_size":1187,"filetime":-1,"ssl_verify_result":0,"redirect_count":0,"total_time":1.369184,"namelookup_time":2.4e-5,"connect_time":0.249047,"pretransfer_time":0.929428,"size_upload":542,"size_download":215,"speed_download":157,"speed_upload":395,"download_content_length":215,"upload_content_length":542,"starttransfer_time":1.369153,"redirect_time":0,"certinfo":[],"primary_ip":"178.236.7.118","primary_port":443,"local_ip":"115.245.155.228","local_port":39415,"redirect_url":"","method":"POST"},"x-aws-stringtosign":"POST\nsqs.eu-west-1.amazonaws.com\n\/065717488322\/cikab_queue\nAWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNtRowQ7gTmvBggsliRxgvvY0SoM5ApHoqW7lobpthhdlTEnzH3olQXi%2F%2BS3hj6WEy87nYfZJOEz3TNsBrxNaX0Bo63Lqhy2ulwVyTKTeff%2FVASCopzwpWkbhwzo5OcIr3l%2FbRaEGRTTHNCwC5l3THP2mJJ5Lc2UiDJP4zCGKbLtzNOMOABObHC24iL9AwbT2OSqygdoVYIjUf2SYMlFOiftvhLZQWPGpCRvxxZA5AAUTNGhhqCUSjWAwQl0GUqMOlfY5zdaosqWiESqCuWea2RUI4ZtZXnjkIE%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-08-03T17%3A23%3A29Z&Version=2011-10-01","x-aws-request-headers":{"Content-Type":"application\/x-www-form-urlencoded; charset=utf-8","Expect":""},"x-aws-body":"AWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNtRowQ7gTmvBggsliRxgvvY0SoM5ApHoqW7lobpthhdlTEnzH3olQXi%2F%2BS3hj6WEy87nYfZJOEz3TNsBrxNaX0Bo63Lqhy2ulwVyTKTeff%2FVASCopzwpWkbhwzo5OcIr3l%2FbRaEGRTTHNCwC5l3THP2mJJ5Lc2UiDJP4zCGKbLtzNOMOABObHC24iL9AwbT2OSqygdoVYIjUf2SYMlFOiftvhLZQWPGpCRvxxZA5AAUTNGhhqCUSjWAwQl0GUqMOlfY5zdaosqWiESqCuWea2RUI4ZtZXnjkIE%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-08-03T17%3A23%3A29Z&Version=2011-10-01&Signature=rs9sAVvUXxL9laSuRkiM9IkhxHFWXraDe1%2B%2BJXC8i4k%3D"},"body":{"@attributes":{"ns":"http:\/\/queue.amazonaws.com\/doc\/2011-10-01\/"},"ResponseMetadata":{"RequestId":"6fe950b9-4bae-58df-bebb-1ce13976e719"}},"status":200}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Get the single message from the message queue
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Message received from the message queue server
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Message Received: {"file":"SET.GZ.FTP.IN.BST.201408031720.252610","content":"HEADERGIZUR           2014080317207691M256      RUTIN   .130KF27777100   mottagn\r\ning initierad                                                                   \r\n      0012526101+03751+038776213+226140805+039140803+040776213+189297060004+C   \r\n      RUTIN   .130KF27777100   Mottagning avslutad    BYTES\/BLOCKS\/RETRIES=1084 \r\n\/5    \/0.","type":"SET"}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Deleting message from message queue : SET.GZ.FTP.IN.BST.201408031720.252610.
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Deleted message Response : {"header":{"server":"Server","date":"Sun, 03 Aug 2014 17:25:49 GMT","content-type":"text\/xml","content-length":"215","connection":"keep-alive","x-amzn-requestid":"bbe70fe9-626b-5236-942e-43b110b68ea7","_info":{"url":"https:\/\/sqs.eu-west-1.amazonaws.com\/065717488322\/cikab_queue","content_type":"text\/xml","http_code":200,"header_size":197,"request_size":1189,"filetime":-1,"ssl_verify_result":0,"redirect_count":0,"total_time":1.389247,"namelookup_time":3.0e-5,"connect_time":0.288936,"pretransfer_time":0.919279,"size_upload":544,"size_download":215,"speed_download":154,"speed_upload":391,"download_content_length":215,"upload_content_length":544,"starttransfer_time":1.389214,"redirect_time":0,"certinfo":[],"primary_ip":"178.236.7.118","primary_port":443,"local_ip":"115.245.155.228","local_port":39418,"redirect_url":"","method":"POST"},"x-aws-stringtosign":"POST\nsqs.eu-west-1.amazonaws.com\n\/065717488322\/cikab_queue\nAWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNsspHSzh9FChggsliRxgvvYd0pPdPDA6TwLibt7LzP4hDO9cilmYCM%2F0EN1N9KjrpgjjK2W4LRrd8GyhdbqOUsDqyRSItvOSPJ1nq%2BbsKxTHxn01EfmP6bsUEPflUG1kN%2F8ayKYYFiaK746Ue06%2BdeovCKfhFCincR5WwRUWPA6t6iXoGeHny3fZKyaMkvYVn07w514cMGNoCuTk7O8E3KcOiQOVHKMBCgAXHgkAN0FlGzmR2lVIoI5t6bW791%2BkBmaKVVYmCwl33UZ%2FKqLAmApRzpzYplJYBw%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-08-03T17%3A23%3A34Z&Version=2011-10-01","x-aws-request-headers":{"Content-Type":"application\/x-www-form-urlencoded; charset=utf-8","Expect":""},"x-aws-body":"AWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNsspHSzh9FChggsliRxgvvYd0pPdPDA6TwLibt7LzP4hDO9cilmYCM%2F0EN1N9KjrpgjjK2W4LRrd8GyhdbqOUsDqyRSItvOSPJ1nq%2BbsKxTHxn01EfmP6bsUEPflUG1kN%2F8ayKYYFiaK746Ue06%2BdeovCKfhFCincR5WwRUWPA6t6iXoGeHny3fZKyaMkvYVn07w514cMGNoCuTk7O8E3KcOiQOVHKMBCgAXHgkAN0FlGzmR2lVIoI5t6bW791%2BkBmaKVVYmCwl33UZ%2FKqLAmApRzpzYplJYBw%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-08-03T17%3A23%3A34Z&Version=2011-10-01&Signature=nXoZaRwlI6crJW1NJt%2FOmUdeenLx761QUtvMQuRzaiY%3D"},"body":{"@attributes":{"ns":"http:\/\/queue.amazonaws.com\/doc\/2011-10-01\/"},"ResponseMetadata":{"RequestId":"bbe70fe9-626b-5236-942e-43b110b68ea7"}},"status":200}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Get the single message from the message queue
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Message received from the message queue server
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Message Received: {"file":"XML.GZ.FTP.IN.BST.201408031720.252610","content":"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<order:orderMessage xmlns:order=\"urn:gs1:ecom:order:xsd:3\" xmlns:sh=\"http:\/\/www.unece.org\/cefact\/namespaces\/StandardBusinessDocumentHeader\" xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\" xsi:schemaLocation=\"urn:gs1:ecom:order:xsd:3 ..\/Schemas\/gs1\/ecom\/Order.xsd\"><order><creationDateTime>2011-03-11T11:00:00.000-05:00<\/creationDateTime><orderIdentification><entityIdentification>776213<\/entityIdentification><\/orderIdentification><orderTypeCode>220<\/orderTypeCode><buyer><gln>252610<\/gln><\/buyer><orderLogisticalInformation><orderLogisticalDateInformation><requestedDeliveryDateTime>2014-08-05<\/requestedDeliveryDateTime><\/orderLogisticalDateInformation><\/orderLogisticalInformation><additionalOrderInstruction>201432<\/additionalOrderInstruction><orderLineItem><lineItemNumber>1<\/lineItemNumber><transactionalTradeItem><gtin>189297060004<\/gtin><\/transactionalTradeItem><materialSpecification>NNN-NNNN-NNNN<\/materialSpecification><requestedQuantity measurementUnitCode=\"CAR\">NNN<\/requestedQuantity><\/orderLineItem><\/order><\/order:orderMessage>\n","type":"XML"}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Deleting message from message queue : XML.GZ.FTP.IN.BST.201408031720.252610.
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Deleted message Response : {"header":{"server":"Server","date":"Sun, 03 Aug 2014 17:25:52 GMT","content-type":"text\/xml","content-length":"215","connection":"keep-alive","x-amzn-requestid":"7588c1da-02c0-5e8d-b91f-8d8270208ee2","_info":{"url":"https:\/\/sqs.eu-west-1.amazonaws.com\/065717488322\/cikab_queue","content_type":"text\/xml","http_code":200,"header_size":197,"request_size":1195,"filetime":-1,"ssl_verify_result":0,"redirect_count":0,"total_time":1.35972,"namelookup_time":2.3e-5,"connect_time":0.279342,"pretransfer_time":0.919657,"size_upload":550,"size_download":215,"speed_download":158,"speed_upload":404,"download_content_length":215,"upload_content_length":550,"starttransfer_time":1.359689,"redirect_time":0,"certinfo":[],"primary_ip":"178.236.7.118","primary_port":443,"local_ip":"115.245.155.228","local_port":39421,"redirect_url":"","method":"POST"},"x-aws-stringtosign":"POST\nsqs.eu-west-1.amazonaws.com\n\/065717488322\/cikab_queue\nAWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNvj6%2FbOijw45ggsliRxgvvYtXvFnCQ%2BT7ij8lb5qEdsv9S7kdJ7plyiEqW13xTklfU%2B2Ha9uPcAxWRQS%2BhuU6FPJ0%2BcIe3nLssqOHIhATbEz%2BfODePhxGKDOaYd6iK2ka2PdByrI9NI8OhTf2uLb%2F9hQShPCNFcl%2FY4YvncMn7SFlsNo6BAfGusR5IY6ULPIsEfqchkhH1dCXKOrs4cZVDuSYVrkwnUlbEdGNUZisAkecVz70ftxIWqMnqq4O852ZZaYTiMZWPqckKGVqRHCIF4yQ3HDTlMx1c%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-08-03T17%3A23%3A37Z&Version=2011-10-01","x-aws-request-headers":{"Content-Type":"application\/x-www-form-urlencoded; charset=utf-8","Expect":""},"x-aws-body":"AWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNvj6%2FbOijw45ggsliRxgvvYtXvFnCQ%2BT7ij8lb5qEdsv9S7kdJ7plyiEqW13xTklfU%2B2Ha9uPcAxWRQS%2BhuU6FPJ0%2BcIe3nLssqOHIhATbEz%2BfODePhxGKDOaYd6iK2ka2PdByrI9NI8OhTf2uLb%2F9hQShPCNFcl%2FY4YvncMn7SFlsNo6BAfGusR5IY6ULPIsEfqchkhH1dCXKOrs4cZVDuSYVrkwnUlbEdGNUZisAkecVz70ftxIWqMnqq4O852ZZaYTiMZWPqckKGVqRHCIF4yQ3HDTlMx1c%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-08-03T17%3A23%3A37Z&Version=2011-10-01&Signature=4MCZV%2BIlTSKRSHB8OCfsdiZsUirwc8Jsde4bdX%2FI8PI%3D"},"body":{"@attributes":{"ns":"http:\/\/queue.amazonaws.com\/doc\/2011-10-01\/"},"ResponseMetadata":{"RequestId":"7588c1da-02c0-5e8d-b91f-8d8270208ee2"}},"status":200}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: Error successfully delivered sales: 
+                 3 and total fetched messages from sqs:
+                  5  are different!  
+-------------------------
+User: Cloud1 - August 3, 2014, 5:23 pm
+File: phpcronjob3
+Message: {"files":{"XML.GZ.FTP.IN.BST.201408031705.252610":{"status":true},"XML.GZ.FTP.IN.BST..252610":{"status":true},"XML.GZ.FTP.IN.BST.201408031647.252610":{"status":true},"SET.GZ.FTP.IN.BST.201408031720.252610":{"status":true},"XML.GZ.FTP.IN.BST.201408031720.252610":{"status":true}},"message":"5 no of files processed.","alertEmailSales":"Mail sent successfully "}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:29 pm
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - August 3, 2014, 5:29 pm
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - August 3, 2014, 5:29 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 5:29 pm
+File: phpcronjob2
+Message: Connected with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 5:29 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 5:29 pm
+File: phpcronjob2
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 5:29 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon _sThree
+-------------------------
+User: Cloud1 - August 3, 2014, 5:29 pm
+File: phpcronjob2
+Message: Connected with Amazon _sThree
+-------------------------
+User: Cloud1 - August 3, 2014, 5:29 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 5:29 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+-------------------------
+User: Cloud1 - August 3, 2014, 5:29 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : No Sales Order Found for SET!
+-------------------------
+User: Cloud1 - August 3, 2014, 5:29 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 5:29 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.mos_status IN ('Created','Approved') AND SO.mos = 'Yes'
+-------------------------
+User: Cloud1 - August 3, 2014, 5:29 pm
+File: phpcronjob2
+Message: getSalesOrdersForXml() : Preparing sales order query
+-------------------------
+User: Cloud1 - August 3, 2014, 5:29 pm
+File: phpcronjob2
+Message: In getSalesOrdersForXml() : Executing Query: SELECT * FROM sales_orders SO 
+            WHERE SO.mos_status IN ('Created','Approved') AND SO.mos = 'Yes'
+            LIMIT 0, 5
+-------------------------
+User: Cloud1 - August 3, 2014, 5:29 pm
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - August 3, 2014, 5:29 pm
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(1778) : Fetching products
+-------------------------
+User: Cloud1 - August 3, 2014, 5:29 pm
+File: phpcronjob2
+Message: Total number of products (1778): 1
+-------------------------
+User: Cloud1 - August 3, 2014, 5:29 pm
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - August 3, 2014, 5:29 pm
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - August 3, 2014, 5:29 pm
+File: phpcronjob2
+Message: In updateIntegrationSalesOrderByAccountName(252610, mos_status, Delivered) : Updating store (252610) column mos_status to Delivered
+-------------------------
+User: Cloud1 - August 3, 2014, 5:29 pm
+File: phpcronjob2
+Message: {"message":"In getSalesOrdersCountSet() : No Sales Order Found for SET!","mos":{"count":1,"accounts":{"252610":{"status":true},"ORD6213":{"file":"XML.GZ.FTP.IN.BST.201408031729.252610"}},"message":"1 number of accounts processed for MOS files."}}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:31 pm
+File: phpcronjob3
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - August 3, 2014, 5:31 pm
+File: phpcronjob3
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 5:31 pm
+File: phpcronjob3
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 5:31 pm
+File: phpcronjob3
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 5:31 pm
+File: phpcronjob3
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 5:31 pm
+File: phpcronjob3
+Message: Number of messages found in message queue : 1.
+-------------------------
+User: Cloud1 - August 3, 2014, 5:31 pm
+File: phpcronjob3
+Message: Get the single message from the message queue
+-------------------------
+User: Cloud1 - August 3, 2014, 5:31 pm
+File: phpcronjob3
+Message: Message received from the message queue server
+-------------------------
+User: Cloud1 - August 3, 2014, 5:31 pm
+File: phpcronjob3
+Message: Message Received: {"file":"XML.GZ.FTP.IN.BST.201408031729.252610","content":"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<order:orderMessage xmlns:order=\"urn:gs1:ecom:order:xsd:3\" xmlns:sh=\"http:\/\/www.unece.org\/cefact\/namespaces\/StandardBusinessDocumentHeader\" xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\" xsi:schemaLocation=\"urn:gs1:ecom:order:xsd:3 ..\/Schemas\/gs1\/ecom\/Order.xsd\"><order><creationDateTime>2011-03-11T11:00:00.000-05:00<\/creationDateTime><orderIdentification><entityIdentification>776213<\/entityIdentification><\/orderIdentification><orderTypeCode>220<\/orderTypeCode><buyer><gln>252610<\/gln><\/buyer><orderLogisticalInformation><orderLogisticalDateInformation><requestedDeliveryDateTime>2014-08-05<\/requestedDeliveryDateTime><\/orderLogisticalDateInformation><\/orderLogisticalInformation><additionalOrderInstruction>201432<\/additionalOrderInstruction><orderLineItem><lineItemNumber>1<\/lineItemNumber><transactionalTradeItem><gtin>189297060004<\/gtin><\/transactionalTradeItem><materialSpecification>NNN-NNNN-NNNN<\/materialSpecification><requestedQuantity measurementUnitCode=\"CAR\">NNN<\/requestedQuantity><\/orderLineItem><\/order><\/order:orderMessage>\n","type":"XML"}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:31 pm
+File: phpcronjob3
+Message: Deleting message from message queue : XML.GZ.FTP.IN.BST.201408031729.252610.
+-------------------------
+User: Cloud1 - August 3, 2014, 5:31 pm
+File: phpcronjob3
+Message: Deleted message Response : {"header":{"server":"Server","date":"Sun, 03 Aug 2014 17:33:29 GMT","content-type":"text\/xml","content-length":"215","connection":"keep-alive","x-amzn-requestid":"d6d6f8aa-3ca7-5a56-9a79-b4f2480e8a39","_info":{"url":"https:\/\/sqs.eu-west-1.amazonaws.com\/065717488322\/cikab_queue","content_type":"text\/xml","http_code":200,"header_size":197,"request_size":1195,"filetime":-1,"ssl_verify_result":0,"redirect_count":0,"total_time":1.149798,"namelookup_time":2.4e-5,"connect_time":0.209706,"pretransfer_time":0.839916,"size_upload":550,"size_download":215,"speed_download":186,"speed_upload":478,"download_content_length":215,"upload_content_length":550,"starttransfer_time":1.149758,"redirect_time":0,"certinfo":[],"primary_ip":"178.236.7.118","primary_port":443,"local_ip":"115.245.155.228","local_port":39562,"redirect_url":"","method":"POST"},"x-aws-stringtosign":"POST\nsqs.eu-west-1.amazonaws.com\n\/065717488322\/cikab_queue\nAWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNvj6%2FbOijw45ggsliRxgvvYpaaVpS93IEGj8lb5qEdsv0YnjMDsAmPK0EN1N9Kjrpg%2B2Ha9uPcAxWRQS%2BhuU6FPJ0%2BcIe3nLssqOHIhATbEz%2BfODePhxGKDOaYd6iK2ka2PdByrI9NI8OhTf2uLb%2F9hQShPCNFcl%2FY4YvncMn7SFlsNo6BAfGusR5IY6ULPIsHpa3A8S7B0lSuX%2Bqa0PjM09xJuAokSINRrO65aXMFkAiMkls%2BRbRFqZ9QfdSItnWA0CK9CN9L28C0M4qdyz2wJS1Y34td%2FzC8%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-08-03T17%3A31%3A14Z&Version=2011-10-01","x-aws-request-headers":{"Content-Type":"application\/x-www-form-urlencoded; charset=utf-8","Expect":""},"x-aws-body":"AWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNvj6%2FbOijw45ggsliRxgvvYpaaVpS93IEGj8lb5qEdsv0YnjMDsAmPK0EN1N9Kjrpg%2B2Ha9uPcAxWRQS%2BhuU6FPJ0%2BcIe3nLssqOHIhATbEz%2BfODePhxGKDOaYd6iK2ka2PdByrI9NI8OhTf2uLb%2F9hQShPCNFcl%2FY4YvncMn7SFlsNo6BAfGusR5IY6ULPIsHpa3A8S7B0lSuX%2Bqa0PjM09xJuAokSINRrO65aXMFkAiMkls%2BRbRFqZ9QfdSItnWA0CK9CN9L28C0M4qdyz2wJS1Y34td%2FzC8%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-08-03T17%3A31%3A14Z&Version=2011-10-01&Signature=mnchQE2kXIDGXS5xJJ27FcEKwWuDdVtnw1UsOKs3zrA%3D"},"body":{"@attributes":{"ns":"http:\/\/queue.amazonaws.com\/doc\/2011-10-01\/"},"ResponseMetadata":{"RequestId":"d6d6f8aa-3ca7-5a56-9a79-b4f2480e8a39"}},"status":200}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:31 pm
+File: phpcronjob3
+Message: Error successfully delivered sales: 
+                 3 and total fetched messages from sqs:
+                  1  are different!  
+-------------------------
+User: Cloud1 - August 3, 2014, 5:31 pm
+File: phpcronjob3
+Message: {"files":{"XML.GZ.FTP.IN.BST.201408031729.252610":{"status":true}},"message":"1 no of files processed.","alertEmailSales":"Mail sent successfully "}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob1
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob1
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid FROM vtiger_salesorder SO WHERE SO.sostatus IN ('Created','Approved')
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob1
+Message: Total number of order : 1
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 5
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob1
+Message: No of salesOrder: 1
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12347","salesorder_no":"ORD6213","cf_650":"Yes","cf_651":"Yes","accountname":"252610","contactid":"264","duedate":"2014-08-03","sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6213)
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob1
+Message: Total number of products (ORD6213): 1
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob1
+Message: In createIntegrationProduct(1779) Preparing insert product query.
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob1
+Message: In createIntegrationProduct(1779) Inserting products 
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob1
+Message: Updating sales order (12347) Delivered
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob1
+Message: Creating sales order: {"count":1,"salesorders":{"ORD6213":{"count":1,"products":{"297060":{"qtn":"4.000","status":true}},"status":true}},"message":"1 number of sales orders processed.","alertEmailSales":"Mail sent successfully "}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: Connected with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon _sThree
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: Connected with Amazon _sThree
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Preparing sales order query
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Executing Query: SELECT * FROM sales_orders SO 
+            WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+            LIMIT 0, 5
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(1779) : Fetching products
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: Total number of products (1779): 1
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201408031737.252610 content generated
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201408031737.252610 at every 80 chars
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201408031737.252610 contents: HEADERGIZUR           2014080317379746M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776213+226140805+039140803+040776213+189297060004+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(1779, Delivered) : Updating sales order (1779) column set_status to Delivered
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Preparing sales order count query
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.mos_status IN ('Created','Approved') AND SO.mos = 'Yes'
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: getSalesOrdersForXml() : Preparing sales order query
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: In getSalesOrdersForXml() : Executing Query: SELECT * FROM sales_orders SO 
+            WHERE SO.mos_status IN ('Created','Approved') AND SO.mos = 'Yes'
+            LIMIT 0, 5
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(1779) : Fetching products
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: Total number of products (1779): 1
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: In updateIntegrationSalesOrderByAccountName(252610, mos_status, Delivered) : Updating store (252610) column mos_status to Delivered
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob2
+Message: {"set":{"count":1,"salesorders":{"ORD6213":{"status":true,"count":1,"file":"SET.GZ.FTP.IN.BST.201408031737.252610"}},"message":"1 number of sales orders processed for SET files."},"mos":{"count":1,"accounts":{"252610":{"status":true},"ORD6213":{"file":"XML.GZ.FTP.IN.BST.201408031737.252610"}},"message":"1 number of accounts processed for MOS files."}}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob3
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob3
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob3
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob3
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob3
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob3
+Message: Number of messages found in message queue : 2.
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob3
+Message: Get the single message from the message queue
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob3
+Message: Message received from the message queue server
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob3
+Message: Message Received: {"file":"SET.GZ.FTP.IN.BST.201408031737.252610","content":"HEADERGIZUR           2014080317379746M256      RUTIN   .130KF27777100   mottagn\r\ning initierad                                                                   \r\n      0012526101+03751+038776213+226140805+039140803+040776213+189297060004+C   \r\n      RUTIN   .130KF27777100   Mottagning avslutad    BYTES\/BLOCKS\/RETRIES=1084 \r\n\/5    \/0.","type":"SET"}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob3
+Message: Deleting message from message queue : SET.GZ.FTP.IN.BST.201408031737.252610.
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob3
+Message: Deleted message Response : {"header":{"server":"Server","date":"Sun, 03 Aug 2014 17:39:57 GMT","content-type":"text\/xml","content-length":"215","connection":"keep-alive","x-amzn-requestid":"92b40785-4171-5084-a7d1-4bdd375cc190","_info":{"url":"https:\/\/sqs.eu-west-1.amazonaws.com\/065717488322\/cikab_queue","content_type":"text\/xml","http_code":200,"header_size":197,"request_size":1197,"filetime":-1,"ssl_verify_result":0,"redirect_count":0,"total_time":1.069518,"namelookup_time":2.5e-5,"connect_time":0.229226,"pretransfer_time":0.759711,"size_upload":552,"size_download":215,"speed_download":201,"speed_upload":516,"download_content_length":215,"upload_content_length":552,"starttransfer_time":1.069466,"redirect_time":0,"certinfo":[],"primary_ip":"176.32.110.115","primary_port":443,"local_ip":"115.245.155.228","local_port":49378,"redirect_url":"","method":"POST"},"x-aws-stringtosign":"POST\nsqs.eu-west-1.amazonaws.com\n\/065717488322\/cikab_queue\nAWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNtJ0vXjQWMy1ggsliRxgvvY2PjCZQZWrbkD4J2C9zCgqMo5aBRVnScq0EN1N9KjrpjJyXHu66vQ4ZxvNx%2BXYAzsLiVf1Bf8q0KYpTkbVLv2sZQhTMbJl3BAjEzomfbt5fZWyHX13LTMXvGrdGr7MFXY9%2Ba%2BRGZL5V45dlLUu9pvC2vQWrnWDO2rZdPRXH6JB6Y0kbPHtVmxjGCUWE6PXmciIK%2B%2Fq%2BW36fpMtkdD3ugq84%2FoFcNg0zLxLnAZHqVGj3%2B1S7vymx%2Fen1HfwJJ37bHcLbvM7Rman%2BU%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-08-03T17%3A37%3A42Z&Version=2011-10-01","x-aws-request-headers":{"Content-Type":"application\/x-www-form-urlencoded; charset=utf-8","Expect":""},"x-aws-body":"AWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNtJ0vXjQWMy1ggsliRxgvvY2PjCZQZWrbkD4J2C9zCgqMo5aBRVnScq0EN1N9KjrpjJyXHu66vQ4ZxvNx%2BXYAzsLiVf1Bf8q0KYpTkbVLv2sZQhTMbJl3BAjEzomfbt5fZWyHX13LTMXvGrdGr7MFXY9%2Ba%2BRGZL5V45dlLUu9pvC2vQWrnWDO2rZdPRXH6JB6Y0kbPHtVmxjGCUWE6PXmciIK%2B%2Fq%2BW36fpMtkdD3ugq84%2FoFcNg0zLxLnAZHqVGj3%2B1S7vymx%2Fen1HfwJJ37bHcLbvM7Rman%2BU%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-08-03T17%3A37%3A42Z&Version=2011-10-01&Signature=eyGSdi38DWbK6CWvluI1hYB7BnqArXge9hMf4J%2FHy0M%3D"},"body":{"@attributes":{"ns":"http:\/\/queue.amazonaws.com\/doc\/2011-10-01\/"},"ResponseMetadata":{"RequestId":"92b40785-4171-5084-a7d1-4bdd375cc190"}},"status":200}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob3
+Message: Get the single message from the message queue
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob3
+Message: Message received from the message queue server
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob3
+Message: Message Received: {"file":"XML.GZ.FTP.IN.BST.201408031737.252610","content":"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<order:orderMessage xmlns:order=\"urn:gs1:ecom:order:xsd:3\" xmlns:sh=\"http:\/\/www.unece.org\/cefact\/namespaces\/StandardBusinessDocumentHeader\" xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\" xsi:schemaLocation=\"urn:gs1:ecom:order:xsd:3 ..\/Schemas\/gs1\/ecom\/Order.xsd\"><order><creationDateTime>2011-03-11T11:00:00.000-05:00<\/creationDateTime><orderIdentification><entityIdentification>776213<\/entityIdentification><\/orderIdentification><orderTypeCode>220<\/orderTypeCode><buyer><gln>252610<\/gln><\/buyer><orderLogisticalInformation><orderLogisticalDateInformation><requestedDeliveryDateTime>2014-08-05<\/requestedDeliveryDateTime><\/orderLogisticalDateInformation><\/orderLogisticalInformation><additionalOrderInstruction>201432<\/additionalOrderInstruction><orderLineItem><lineItemNumber>1<\/lineItemNumber><transactionalTradeItem><gtin>189297060004<\/gtin><\/transactionalTradeItem><materialSpecification>NNN-NNNN-NNNN<\/materialSpecification><requestedQuantity measurementUnitCode=\"CAR\">NNN<\/requestedQuantity><\/orderLineItem><\/order><\/order:orderMessage>\n","type":"XML"}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob3
+Message: Deleting message from message queue : XML.GZ.FTP.IN.BST.201408031737.252610.
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob3
+Message: Deleted message Response : {"header":{"server":"Server","date":"Sun, 03 Aug 2014 17:40:01 GMT","content-type":"text\/xml","content-length":"215","connection":"keep-alive","x-amzn-requestid":"b974409f-e900-52ce-b6a9-0cc79f318362","_info":{"url":"https:\/\/sqs.eu-west-1.amazonaws.com\/065717488322\/cikab_queue","content_type":"text\/xml","http_code":200,"header_size":197,"request_size":1205,"filetime":-1,"ssl_verify_result":0,"redirect_count":0,"total_time":1.03949,"namelookup_time":2.7e-5,"connect_time":0.219539,"pretransfer_time":0.72956,"size_upload":560,"size_download":215,"speed_download":206,"speed_upload":538,"download_content_length":215,"upload_content_length":560,"starttransfer_time":1.039461,"redirect_time":0,"certinfo":[],"primary_ip":"176.32.110.115","primary_port":443,"local_ip":"115.245.155.228","local_port":49382,"redirect_url":"","method":"POST"},"x-aws-stringtosign":"POST\nsqs.eu-west-1.amazonaws.com\n\/065717488322\/cikab_queue\nAWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNu4uetfi3ehrQgsliRxgvvYmsLwIzI2HYHHK353KcqijphB0LL68FXy%2F%2BS3hj6WEy9RPCUs883HyOBNBKLfyx0yA31d3FdiW0ykxNIMe4GjSAhYNFHUY%2F2ioVLTkY1A63FWyHX13LTMXvGrdGr7MFXY9%2Ba%2BRGZL5V45dlLUu9pvC2vQWrnWDO2rZdPRXH6JB6ZRYu4NJJ0t%2BjTkNgEQru2V85DFkxmt%2BFgV%2BwQ1VINxkkBTZM%2FeD4WADjZCp5B%2F798gdFC%2FZbhIHhdDOo%2BG0fgGW%2BUUMXRDpAI%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-08-03T17%3A37%3A47Z&Version=2011-10-01","x-aws-request-headers":{"Content-Type":"application\/x-www-form-urlencoded; charset=utf-8","Expect":""},"x-aws-body":"AWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNu4uetfi3ehrQgsliRxgvvYmsLwIzI2HYHHK353KcqijphB0LL68FXy%2F%2BS3hj6WEy9RPCUs883HyOBNBKLfyx0yA31d3FdiW0ykxNIMe4GjSAhYNFHUY%2F2ioVLTkY1A63FWyHX13LTMXvGrdGr7MFXY9%2Ba%2BRGZL5V45dlLUu9pvC2vQWrnWDO2rZdPRXH6JB6ZRYu4NJJ0t%2BjTkNgEQru2V85DFkxmt%2BFgV%2BwQ1VINxkkBTZM%2FeD4WADjZCp5B%2F798gdFC%2FZbhIHhdDOo%2BG0fgGW%2BUUMXRDpAI%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-08-03T17%3A37%3A47Z&Version=2011-10-01&Signature=m8RHZykEGugh%2F%2FaFqh9aa3YPfZ49aKZvitnS8CuoCZo%3D"},"body":{"@attributes":{"ns":"http:\/\/queue.amazonaws.com\/doc\/2011-10-01\/"},"ResponseMetadata":{"RequestId":"b974409f-e900-52ce-b6a9-0cc79f318362"}},"status":200}
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob3
+Message: Error successfully delivered sales: 
+                 5 and total fetched messages from sqs:
+                  2  are different!  
+-------------------------
+User: Cloud1 - August 3, 2014, 5:37 pm
+File: phpcronjob3
+Message: {"files":{"SET.GZ.FTP.IN.BST.201408031737.252610":{"status":true},"XML.GZ.FTP.IN.BST.201408031737.252610":{"status":true}},"message":"2 no of files processed.","alertEmailSales":"Mail sent successfully "}
+-------------------------

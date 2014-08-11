@@ -1,0 +1,324 @@
+User: Cloud1 - June 10, 2014, 6:20 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:20 am
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:20 am
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:20 am
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - June 10, 2014, 6:20 am
+File: phpcronjob1
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - June 10, 2014, 6:20 am
+File: phpcronjob1
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - June 10, 2014, 6:20 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order count query
+-------------------------
+User: Cloud1 - June 10, 2014, 6:20 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid FROM vtiger_salesorder SO WHERE SO.sostatus IN ('Created','Approved')
+-------------------------
+User: Cloud1 - June 10, 2014, 6:20 am
+File: phpcronjob1
+Message: In getSalesOrdersCount() : No Sales Order Found!
+-------------------------
+User: Cloud1 - June 10, 2014, 6:20 am
+File: phpcronjob1
+Message: Creating sales order: {"message":"In getSalesOrdersCount() : No Sales Order Found!"}
+-------------------------
+User: Cloud1 - June 10, 2014, 6:21 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:21 am
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:21 am
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:21 am
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - June 10, 2014, 6:21 am
+File: phpcronjob1
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - June 10, 2014, 6:21 am
+File: phpcronjob1
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - June 10, 2014, 6:21 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order count query
+-------------------------
+User: Cloud1 - June 10, 2014, 6:21 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid FROM vtiger_salesorder SO WHERE SO.sostatus IN ('Created','Approved')
+-------------------------
+User: Cloud1 - June 10, 2014, 6:21 am
+File: phpcronjob1
+Message: In getSalesOrdersCount() : No Sales Order Found!
+-------------------------
+User: Cloud1 - June 10, 2014, 6:21 am
+File: phpcronjob1
+Message: Creating sales order: {"message":"In getSalesOrdersCount() : No Sales Order Found!"}
+-------------------------
+User: Cloud1 - June 10, 2014, 6:22 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:22 am
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:22 am
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:22 am
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - June 10, 2014, 6:22 am
+File: phpcronjob1
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - June 10, 2014, 6:22 am
+File: phpcronjob1
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - June 10, 2014, 6:22 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order count query
+-------------------------
+User: Cloud1 - June 10, 2014, 6:22 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid FROM vtiger_salesorder SO WHERE SO.sostatus IN ('Created','Approved')
+-------------------------
+User: Cloud1 - June 10, 2014, 6:22 am
+File: phpcronjob1
+Message: In getSalesOrdersCount() : No Sales Order Found!
+-------------------------
+User: Cloud1 - June 10, 2014, 6:22 am
+File: phpcronjob1
+Message: Creating sales order: {"message":"In getSalesOrdersCount() : No Sales Order Found!"}
+-------------------------
+User: Cloud1 - June 10, 2014, 6:24 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:27 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:27 am
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:27 am
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:27 am
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - June 10, 2014, 6:27 am
+File: phpcronjob1
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - June 10, 2014, 6:27 am
+File: phpcronjob1
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - June 10, 2014, 6:27 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order count query
+-------------------------
+User: Cloud1 - June 10, 2014, 6:27 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid FROM vtiger_salesorder SO WHERE SO.sostatus IN ('Created','Approved')
+-------------------------
+User: Cloud1 - June 10, 2014, 6:27 am
+File: phpcronjob1
+Message: In getSalesOrdersCount() : No Sales Order Found!
+-------------------------
+User: Cloud1 - June 10, 2014, 6:27 am
+File: phpcronjob1
+Message: Creating sales order: {"message":"In getSalesOrdersCount() : No Sales Order Found!"}
+-------------------------
+User: Cloud1 - June 10, 2014, 6:28 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:28 am
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:28 am
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:28 am
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - June 10, 2014, 6:28 am
+File: phpcronjob1
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - June 10, 2014, 6:28 am
+File: phpcronjob1
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - June 10, 2014, 6:28 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order count query
+-------------------------
+User: Cloud1 - June 10, 2014, 6:28 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid FROM vtiger_salesorder SO WHERE SO.sostatus IN ('Created','Approved')
+-------------------------
+User: Cloud1 - June 10, 2014, 6:28 am
+File: phpcronjob1
+Message: In getSalesOrdersCount() : No Sales Order Found!
+-------------------------
+User: Cloud1 - June 10, 2014, 6:28 am
+File: phpcronjob1
+Message: Creating sales order: {"message":"In getSalesOrdersCount() : No Sales Order Found!"}
+-------------------------
+User: Cloud1 - June 10, 2014, 6:32 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:32 am
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:32 am
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:32 am
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - June 10, 2014, 6:32 am
+File: phpcronjob1
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - June 10, 2014, 6:32 am
+File: phpcronjob1
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - June 10, 2014, 6:32 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order count query
+-------------------------
+User: Cloud1 - June 10, 2014, 6:32 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid FROM vtiger_salesorder SO WHERE SO.sostatus1 IN ('Created','Approved')
+-------------------------
+User: Cloud1 - June 10, 2014, 6:32 am
+File: phpcronjob1
+Message: In getSalesOrders() : Error executing sales order query : (1054) - Unknown column 'SO.sostatus1' in 'where clause'
+-------------------------
+User: Cloud1 - June 10, 2014, 6:32 am
+File: phpcronjob1
+Message: Creating sales order: {"message":"In getSalesOrdersCount() : Error executing sales order query : (1054) - Unknown column 'SO.sostatus1' in 'where clause'"}
+-------------------------
+User: Cloud1 - June 10, 2014, 6:32 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:32 am
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:32 am
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:32 am
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - June 10, 2014, 6:32 am
+File: phpcronjob1
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - June 10, 2014, 6:32 am
+File: phpcronjob1
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - June 10, 2014, 6:32 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order count query
+-------------------------
+User: Cloud1 - June 10, 2014, 6:32 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid FROM vtiger_salesorder SO WHERE SO.sostatus1 IN ('Created','Approved')
+-------------------------
+User: Cloud1 - June 10, 2014, 6:32 am
+File: phpcronjob1
+Message: In getSalesOrders() : Error executing sales order query : (1054) - Unknown column 'SO.sostatus1' in 'where clause'
+-------------------------
+User: Cloud1 - June 10, 2014, 6:32 am
+File: phpcronjob1
+Message: Creating sales order: {"message":"In getSalesOrdersCount() : Error executing sales order query : (1054) - Unknown column 'SO.sostatus1' in 'where clause'"}
+-------------------------
+User: Cloud1 - June 10, 2014, 6:38 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:38 am
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:38 am
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - June 10, 2014, 6:38 am
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - June 10, 2014, 6:38 am
+File: phpcronjob1
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - June 10, 2014, 6:38 am
+File: phpcronjob1
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - June 10, 2014, 6:38 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order count query
+-------------------------
+User: Cloud1 - June 10, 2014, 6:38 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid FROM vtiger_salesorder SO WHERE SO.sostatus IN ('Created','Approved')
+-------------------------
+User: Cloud1 - June 10, 2014, 6:38 am
+File: phpcronjob1
+Message: In getSalesOrdersCount() : No Sales Order Found!
+-------------------------
+User: Cloud1 - June 10, 2014, 6:38 am
+File: phpcronjob1
+Message: Creating sales order: {"message":"In getSalesOrdersCount() : No Sales Order Found!"}
+-------------------------

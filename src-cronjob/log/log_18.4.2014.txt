@@ -1,0 +1,1955 @@
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 10
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14472","salesorder_no":"ORD8073","cf_650":"Yes","cf_651":"No","accountname":"257310","contactid":"367","duedate":null,"sostatus":"Created","accountid":"12"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8073)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Total number of products (ORD8073): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Updating sales order (14472) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Total delivered salesOrder in integration table is: 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14473","salesorder_no":"ORD8074","cf_650":"Yes","cf_651":"No","accountname":"256310","contactid":"2984","duedate":null,"sostatus":"Created","accountid":"67"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8074)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Total number of products (ORD8074): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Updating sales order (14473) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Total delivered salesOrder in integration table is: 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14474","salesorder_no":"ORD8075","cf_650":"Yes","cf_651":"No","accountname":"257310","contactid":"367","duedate":null,"sostatus":"Created","accountid":"12"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8075)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Total number of products (ORD8075): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Updating sales order (14474) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Total delivered salesOrder in integration table is: 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14475","salesorder_no":"ORD8076","cf_650":"Yes","cf_651":"No","accountname":"257310","contactid":"367","duedate":null,"sostatus":"Created","accountid":"12"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8076)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Total number of products (ORD8076): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Updating sales order (14475) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Total delivered salesOrder in integration table is: 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14476","salesorder_no":"ORD8077","cf_650":"Yes","cf_651":"No","accountname":"257310","contactid":"367","duedate":null,"sostatus":"Created","accountid":"12"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8077)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Total number of products (ORD8077): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Updating sales order (14476) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Total delivered salesOrder in integration table is: 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14477","salesorder_no":"ORD8078","cf_650":"Yes","cf_651":"No","accountname":"257310","contactid":"367","duedate":null,"sostatus":"Created","accountid":"12"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8078)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Total number of products (ORD8078): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Updating sales order (14477) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Total delivered salesOrder in integration table is: 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14478","salesorder_no":"ORD8079","cf_650":"Yes","cf_651":"No","accountname":"257310","contactid":"367","duedate":null,"sostatus":"Created","accountid":"12"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8079)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Total number of products (ORD8079): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Updating sales order (14478) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Total delivered salesOrder in integration table is: 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14479","salesorder_no":"ORD8080","cf_650":"Yes","cf_651":"No","accountname":"257310","contactid":"367","duedate":null,"sostatus":"Created","accountid":"12"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8080)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Total number of products (ORD8080): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Updating sales order (14479) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Total delivered salesOrder in integration table is: 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14480","salesorder_no":"ORD8081","cf_650":"Yes","cf_651":"No","accountname":"257310","contactid":"367","duedate":null,"sostatus":"Created","accountid":"12"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8081)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Total number of products (ORD8081): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Updating sales order (14480) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Total delivered salesOrder in integration table is: 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14481","salesorder_no":"ORD8082","cf_650":"Yes","cf_651":"No","accountname":"257310","contactid":"367","duedate":null,"sostatus":"Created","accountid":"12"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8082)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Total number of products (ORD8082): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Updating sales order (14481) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Total delivered salesOrder in integration table is: 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:29 am
+File: phpcronjob1
+Message: Creating sales order: {"count":10,"salesorders":{"ORD8073":{"count":0,"products":null,"status":true},"ORD8074":{"count":0,"products":null,"status":true},"ORD8075":{"count":0,"products":null,"status":true},"ORD8076":{"count":0,"products":null,"status":true},"ORD8077":{"count":0,"products":null,"status":true},"ORD8078":{"count":0,"products":null,"status":true},"ORD8079":{"count":0,"products":null,"status":true},"ORD8080":{"count":0,"products":null,"status":true},"ORD8081":{"count":0,"products":null,"status":true},"ORD8082":{"count":0,"products":null,"status":true}},"message":"10 number of sales orders processed."}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 10
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14482","salesorder_no":"ORD8083","cf_650":"Yes","cf_651":"No","accountname":"257310","contactid":"367","duedate":null,"sostatus":"Created","accountid":"12"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8083)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Total number of products (ORD8083): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Updating sales order (14482) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Total delivered salesOrder in integration table is: 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14483","salesorder_no":"ORD8084","cf_650":"Yes","cf_651":"No","accountname":"257310","contactid":"367","duedate":null,"sostatus":"Created","accountid":"12"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8084)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Total number of products (ORD8084): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Updating sales order (14483) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Total delivered salesOrder in integration table is: 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14484","salesorder_no":"ORD8085","cf_650":"Yes","cf_651":"No","accountname":"257310","contactid":"367","duedate":null,"sostatus":"Created","accountid":"12"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8085)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Total number of products (ORD8085): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Updating sales order (14484) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Total delivered salesOrder in integration table is: 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14485","salesorder_no":"ORD8086","cf_650":"Yes","cf_651":"No","accountname":"257310","contactid":"367","duedate":null,"sostatus":"Created","accountid":"12"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8086)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Total number of products (ORD8086): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Updating sales order (14485) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Total delivered salesOrder in integration table is: 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14486","salesorder_no":"ORD8087","cf_650":"Yes","cf_651":"No","accountname":"257310","contactid":"367","duedate":null,"sostatus":"Created","accountid":"12"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8087)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Total number of products (ORD8087): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Updating sales order (14486) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Total delivered salesOrder in integration table is: 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14487","salesorder_no":"ORD8088","cf_650":"Yes","cf_651":"No","accountname":"257310","contactid":"367","duedate":null,"sostatus":"Created","accountid":"12"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8088)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Total number of products (ORD8088): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Updating sales order (14487) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Total delivered salesOrder in integration table is: 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14488","salesorder_no":"ORD8089","cf_650":"Yes","cf_651":"No","accountname":"231421","contactid":"1740","duedate":null,"sostatus":"Created","accountid":"133"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8089)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Total number of products (ORD8089): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Updating sales order (14488) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Total delivered salesOrder in integration table is: 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14489","salesorder_no":"ORD8090","cf_650":"Yes","cf_651":"No","accountname":"254510","contactid":"517","duedate":null,"sostatus":"Created","accountid":"59"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8090)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Total number of products (ORD8090): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Updating sales order (14489) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Total delivered salesOrder in integration table is: 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14490","salesorder_no":"ORD8091","cf_650":"Yes","cf_651":"No","accountname":"253010","contactid":"1742","duedate":null,"sostatus":"Created","accountid":"55"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8091)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Total number of products (ORD8091): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Updating sales order (14490) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Total delivered salesOrder in integration table is: 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14491","salesorder_no":"ORD8092","cf_650":"Yes","cf_651":"No","accountname":"254510","contactid":"517","duedate":null,"sostatus":"Created","accountid":"59"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8092)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Total number of products (ORD8092): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Updating sales order (14491) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: No salesOrder found!
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Total delivered salesOrder in integration table is: 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:33 am
+File: phpcronjob1
+Message: Creating sales order: {"count":10,"salesorders":{"ORD8083":{"count":0,"products":null,"status":true},"ORD8084":{"count":0,"products":null,"status":true},"ORD8085":{"count":0,"products":null,"status":true},"ORD8086":{"count":0,"products":null,"status":true},"ORD8087":{"count":0,"products":null,"status":true},"ORD8088":{"count":0,"products":null,"status":true},"ORD8089":{"count":0,"products":null,"status":true},"ORD8090":{"count":0,"products":null,"status":true},"ORD8091":{"count":0,"products":null,"status":true},"ORD8092":{"count":0,"products":null,"status":true}},"message":"10 number of sales orders processed."}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:46 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud3 - April 18, 2014, 11:46 am
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud3 - April 18, 2014, 11:46 am
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud3 - April 18, 2014, 11:46 am
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud3 - April 18, 2014, 11:46 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud3 - April 18, 2014, 11:46 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 2
+-------------------------
+User: Cloud3 - April 18, 2014, 11:46 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:46 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14492","salesorder_no":"ORD8093","cf_650":"Yes","cf_651":"No","accountname":"253010","contactid":"1742","duedate":null,"sostatus":"Created","accountid":"55"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:46 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8093)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:46 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:46 am
+File: phpcronjob1
+Message: Total number of products (ORD8093): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:46 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:46 am
+File: phpcronjob1
+Message: Updating sales order (14492) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:46 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:46 am
+File: phpcronjob1
+Message: Error in query:SELECT COUNT(*) as orderCount FROM sales_orders where created like '%2014-04-18%'
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 2
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14492","salesorder_no":"ORD8093","cf_650":"Yes","cf_651":"No","accountname":"253010","contactid":"1742","duedate":null,"sostatus":"Created","accountid":"55"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8093)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Total number of products (ORD8093): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Updating sales order (14492) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Error in query:SELECT COUNT(*) as orderCount FROM sales_orders where created like '%2014-04-18%'
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Error in query:SELECT COUNT(*) as orderCount FROM sales_orders where created like '%2014-04-18%'
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Total delivered salesOrder in integration table is: 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14493","salesorder_no":"ORD8094","cf_650":"Yes","cf_651":"No","accountname":"254510","contactid":"517","duedate":null,"sostatus":"Created","accountid":"59"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8094)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Total number of products (ORD8094): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Updating sales order (14493) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Error in query:SELECT COUNT(*) as orderCount FROM sales_orders where created like '%2014-04-18%'
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Error in query:SELECT COUNT(*) as orderCount FROM sales_orders where created like '%2014-04-18%'
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Total delivered salesOrder in integration table is: 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:50 am
+File: phpcronjob1
+Message: Creating sales order: {"count":2,"salesorders":{"ORD8093":{"count":0,"products":null,"status":true},"ORD8094":{"count":0,"products":null,"status":true}},"message":"2 number of sales orders processed."}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:53 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud3 - April 18, 2014, 11:53 am
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud3 - April 18, 2014, 11:53 am
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud3 - April 18, 2014, 11:53 am
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud3 - April 18, 2014, 11:53 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud3 - April 18, 2014, 11:53 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 2
+-------------------------
+User: Cloud3 - April 18, 2014, 11:53 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:53 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14494","salesorder_no":"ORD8095","cf_650":"Yes","cf_651":"No","accountname":"254510","contactid":"517","duedate":null,"sostatus":"Created","accountid":"59"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:53 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8095)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:53 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:53 am
+File: phpcronjob1
+Message: Total number of products (ORD8095): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:53 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:53 am
+File: phpcronjob1
+Message: Updating sales order (14494) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:53 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:53 am
+File: phpcronjob1
+Message: Error in query:SELECT COUNT(*) as orderCount FROM sales_orders where created like '%2014-04-18%'
+-------------------------
+User: Cloud3 - April 18, 2014, 11:58 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud3 - April 18, 2014, 11:58 am
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud3 - April 18, 2014, 11:58 am
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud3 - April 18, 2014, 11:58 am
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud3 - April 18, 2014, 11:58 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud3 - April 18, 2014, 11:58 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 2
+-------------------------
+User: Cloud3 - April 18, 2014, 11:58 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:58 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14494","salesorder_no":"ORD8095","cf_650":"Yes","cf_651":"No","accountname":"254510","contactid":"517","duedate":null,"sostatus":"Created","accountid":"59"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:58 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8095)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:58 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:58 am
+File: phpcronjob1
+Message: Total number of products (ORD8095): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:58 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:58 am
+File: phpcronjob1
+Message: Updating sales order (14494) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:58 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:58 am
+File: phpcronjob1
+Message: Error in query:SELECT COUNT(*) as orderCount FROM sales_orders where created like '%2014-04-18%'
+-------------------------
+User: Cloud3 - April 18, 2014, 11:58 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 2
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14494","salesorder_no":"ORD8095","cf_650":"Yes","cf_651":"No","accountname":"254510","contactid":"517","duedate":null,"sostatus":"Created","accountid":"59"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8095)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: Total number of products (ORD8095): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: Updating sales order (14494) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: Error in query:SELECT COUNT(*) as orderCount FROM sales_orders where created like '%2014-04-18%'
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 2
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14494","salesorder_no":"ORD8095","cf_650":"Yes","cf_651":"No","accountname":"254510","contactid":"517","duedate":null,"sostatus":"Created","accountid":"59"}
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8095)
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: Total number of products (ORD8095): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: Updating sales order (14494) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 11:59 am
+File: phpcronjob1
+Message: Error in query:SELECT COUNT(*) as orderCount FROM sales_orders where created like '%2014-04-18%'
+-------------------------
+User: Cloud3 - April 18, 2014, 12:00 pm
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud3 - April 18, 2014, 12:00 pm
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud3 - April 18, 2014, 12:00 pm
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud3 - April 18, 2014, 12:00 pm
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud3 - April 18, 2014, 12:00 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud3 - April 18, 2014, 12:00 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 2
+-------------------------
+User: Cloud3 - April 18, 2014, 12:00 pm
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 12:00 pm
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14494","salesorder_no":"ORD8095","cf_650":"Yes","cf_651":"No","accountname":"254510","contactid":"517","duedate":null,"sostatus":"Created","accountid":"59"}
+-------------------------
+User: Cloud3 - April 18, 2014, 12:00 pm
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8095)
+-------------------------
+User: Cloud3 - April 18, 2014, 12:00 pm
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 12:00 pm
+File: phpcronjob1
+Message: Total number of products (ORD8095): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 12:00 pm
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 12:00 pm
+File: phpcronjob1
+Message: Updating sales order (14494) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 12:00 pm
+File: phpcronjob1
+Message: Counting salesOrder in Integration table
+-------------------------
+User: Cloud3 - April 18, 2014, 12:00 pm
+File: phpcronjob1
+Message: Error in query:SELECT COUNT(*) as orderCount FROM sales_orders where created like '%2014-04-18%'
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 2
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: No of salesOrder: 
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14494","salesorder_no":"ORD8095","cf_650":"Yes","cf_651":"No","accountname":"254510","contactid":"517","duedate":null,"sostatus":"Created","accountid":"59"}
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8095)
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: Total number of products (ORD8095): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: Updating sales order (14494) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14495","salesorder_no":"ORD8096","cf_650":"Yes","cf_651":"No","accountname":"254510","contactid":"517","duedate":null,"sostatus":"Created","accountid":"59"}
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8096)
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: Total number of products (ORD8096): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: Updating sales order (14495) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: Creating sales order: {"count":2,"salesorders":{"ORD8095":{"count":0,"products":null,"status":true},"ORD8096":{"count":0,"products":null,"status":true}},"message":"2 number of sales orders processed."}
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 2
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: No of salesOrder: 2
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14496","salesorder_no":"ORD8097","cf_650":"Yes","cf_651":"No","accountname":"254510","contactid":"517","duedate":null,"sostatus":"Created","accountid":"59"}
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8097)
+-------------------------
+User: Cloud3 - April 18, 2014, 12:07 pm
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob1
+Message: Total number of products (ORD8097): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob1
+Message: Updating sales order (14496) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"14497","salesorder_no":"ORD8098","cf_650":"Yes","cf_651":"No","accountname":"254510","contactid":"517","duedate":null,"sostatus":"Created","accountid":"59"}
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD8098)
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob1
+Message: Total number of products (ORD8098): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob1
+Message: Updating sales order (14497) Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob1
+Message: Creating sales order: {"count":2,"salesorders":{"ORD8097":{"count":0,"products":null,"status":true},"ORD8098":{"count":0,"products":null,"status":true}},"message":"2 number of sales orders processed."}
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: Connected with Amazon SQS
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: Trying connecting with Amazon _sThree
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: Connected with Amazon _sThree
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Preparing sales order query
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Executing Query: SELECT * FROM sales_orders SO 
+            WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+            LIMIT 0, 2
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(3649) : Fetching products
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: Total number of products (3649): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201404181208.257310 content generated
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201404181208.257310 at every 80 chars
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201404181208.257310 contents: HEADERGIZUR           2014041812086129M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012573101+03751+038778073+226140420+039140418+040778073++C         RUTIN 
+  .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 /5    /0.
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(3649, Delivered) : Updating sales order (3649) column set_status to Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(3650) : Fetching products
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: Total number of products (3650): 0
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201404181208.256310 content generated
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201404181208.256310 at every 80 chars
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201404181208.256310 contents: HEADERGIZUR           2014041812081369M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012563101+03751+038778074+226140420+039140418+040778074++C         RUTIN 
+  .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 /5    /0.
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(3650, Delivered) : Updating sales order (3650) column set_status to Delivered
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: In getAccountsForMos() : Preparing sales order query
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: In getAccountsForMos() : Executing Query: SELECT DISTINCT SO.accountname FROM sales_orders SO
+            WHERE SO.mos_status IN ('Created','Approved') AND SO.mos = 'Yes'
+            LIMIT 0, 2
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: 4
+Message: In getAccountsForMos() : No Sales Order Found!
+-------------------------
+User: Cloud3 - April 18, 2014, 12:08 pm
+File: phpcronjob2
+Message: {"set":{"count":2,"salesorders":{"ORD8073":{"status":true,"count":0,"file":"SET.GZ.FTP.IN.BST.201404181208.257310"},"ORD8074":{"status":true,"count":0,"file":"SET.GZ.FTP.IN.BST.201404181208.256310"}},"message":"2 number of sales orders processed for SET files."},"message":"In getAccountsForMos() : No Sales Order Found!"}
+-------------------------
+User: Cloud3 - April 18, 2014, 12:10 pm
+File: phpcronjob3
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud3 - April 18, 2014, 12:10 pm
+File: phpcronjob3
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud3 - April 18, 2014, 12:10 pm
+File: phpcronjob3
+Message: Number of messages found in message queue : 2.
+-------------------------
+User: Cloud3 - April 18, 2014, 12:10 pm
+File: phpcronjob3
+Message: Get the single message from the message queue
+-------------------------
+User: Cloud3 - April 18, 2014, 12:10 pm
+File: phpcronjob3
+Message: Message received from the message queue server
+-------------------------
+User: Cloud3 - April 18, 2014, 12:10 pm
+File: phpcronjob3
+Message: Message Received: {"file":"SET.GZ.FTP.IN.BST.201404181208.256310","content":"HEADERGIZUR           2014041812081369M256      RUTIN   .130KF27777100   mottagn\r\ning initierad                                                                   \r\n      0012563101+03751+038778074+226140420+039140418+040778074++C         RUTIN \r\n  .130KF27777100   Mottagning avslutad    BYTES\/BLOCKS\/RETRIES=1084 \/5    \/0.","type":"SET"}
+-------------------------
+User: Cloud3 - April 18, 2014, 12:10 pm
+File: phpcronjob3
+Message: Deleting message from message queue : SET.GZ.FTP.IN.BST.201404181208.256310.
+-------------------------
+User: Cloud3 - April 18, 2014, 12:10 pm
+File: phpcronjob3
+Message: Deleted message Response : {"header":{"server":"Server","date":"Fri, 18 Apr 2014 12:11:15 GMT","content-type":"text\/xml","content-length":"215","connection":"keep-alive","x-amzn-requestid":"802e171c-b12d-51fe-a17e-5cd7a98e9455","_info":{"url":"https:\/\/sqs.eu-west-1.amazonaws.com\/065717488322\/cikab_queue","content_type":"text\/xml","http_code":200,"header_size":197,"request_size":1191,"filetime":-1,"ssl_verify_result":0,"redirect_count":0,"total_time":1.469807,"namelookup_time":1.7e-5,"connect_time":0.249777,"pretransfer_time":1.11012,"size_upload":546,"size_download":215,"speed_download":146,"speed_upload":371,"download_content_length":215,"upload_content_length":546,"starttransfer_time":1.469768,"redirect_time":0,"certinfo":[],"primary_ip":"176.32.111.157","primary_port":443,"local_ip":"101.58.169.248","local_port":49516,"redirect_url":"","method":"POST"},"x-aws-stringtosign":"POST\nsqs.eu-west-1.amazonaws.com\n\/065717488322\/cikab_queue\nAWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNu4uetfi3ehrTq%2FvUeEev3aQad6jka5YYs%2BzpezAnZbnlGYMQ3pRGQ6%2F%2BS3hj6WEy9RPCUs883HyOBNBKLfyx0yA31d3FdiW0ykxNIMe4GjSAhYNFHUY%2F2ioVLTkY1A63FWyHX13LTMXvGrdGr7MFXY9%2Ba%2BRGZL5V45dlLUu9pvC2vQWrnWDO2rZdPRXH6JB6aX0%2FGAJYT6UBK8v1lzKoRLMBL4VbQZto3vxGg2aaPIOiBxp9L9bDqif8cFYVvtbQvFKhgFBmCHeXAHV0BdF1zHLs3cK6qgKME%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-04-18T12%3A10%3A49Z&Version=2011-10-01","x-aws-request-headers":{"Content-Type":"application\/x-www-form-urlencoded; charset=utf-8","Expect":""},"x-aws-body":"AWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNu4uetfi3ehrTq%2FvUeEev3aQad6jka5YYs%2BzpezAnZbnlGYMQ3pRGQ6%2F%2BS3hj6WEy9RPCUs883HyOBNBKLfyx0yA31d3FdiW0ykxNIMe4GjSAhYNFHUY%2F2ioVLTkY1A63FWyHX13LTMXvGrdGr7MFXY9%2Ba%2BRGZL5V45dlLUu9pvC2vQWrnWDO2rZdPRXH6JB6aX0%2FGAJYT6UBK8v1lzKoRLMBL4VbQZto3vxGg2aaPIOiBxp9L9bDqif8cFYVvtbQvFKhgFBmCHeXAHV0BdF1zHLs3cK6qgKME%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-04-18T12%3A10%3A49Z&Version=2011-10-01&Signature=c9cVGMY0rQvVd8mYafHf1pttp2nrvurSp6KylO33Gwg%3D"},"body":{"@attributes":{"ns":"http:\/\/queue.amazonaws.com\/doc\/2011-10-01\/"},"ResponseMetadata":{"RequestId":"802e171c-b12d-51fe-a17e-5cd7a98e9455"}},"status":200}
+-------------------------
+User: Cloud3 - April 18, 2014, 12:10 pm
+File: phpcronjob3
+Message: Get the single message from the message queue
+-------------------------
+User: Cloud3 - April 18, 2014, 12:10 pm
+File: phpcronjob3
+Message: Message received from the message queue server
+-------------------------
+User: Cloud3 - April 18, 2014, 12:10 pm
+File: phpcronjob3
+Message: Message Received: {"file":"SET.GZ.FTP.IN.BST.201404181208.257310","content":"HEADERGIZUR           2014041812086129M256      RUTIN   .130KF27777100   mottagn\r\ning initierad                                                                   \r\n      0012573101+03751+038778073+226140420+039140418+040778073++C         RUTIN \r\n  .130KF27777100   Mottagning avslutad    BYTES\/BLOCKS\/RETRIES=1084 \/5    \/0.","type":"SET"}
+-------------------------
+User: Cloud3 - April 18, 2014, 12:10 pm
+File: phpcronjob3
+Message: Deleting message from message queue : SET.GZ.FTP.IN.BST.201404181208.257310.
+-------------------------
+User: Cloud3 - April 18, 2014, 12:10 pm
+File: phpcronjob3
+Message: Deleted message Response : {"header":{"server":"Server","date":"Fri, 18 Apr 2014 12:11:20 GMT","content-type":"text\/xml","content-length":"215","connection":"keep-alive","x-amzn-requestid":"764f3bce-f5c8-5dad-a017-7005ed602625","_info":{"url":"https:\/\/sqs.eu-west-1.amazonaws.com\/065717488322\/cikab_queue","content_type":"text\/xml","http_code":200,"header_size":197,"request_size":1193,"filetime":-1,"ssl_verify_result":0,"redirect_count":0,"total_time":1.898737,"namelookup_time":2.6e-5,"connect_time":0.268484,"pretransfer_time":1.4986,"size_upload":548,"size_download":215,"speed_download":113,"speed_upload":288,"download_content_length":215,"upload_content_length":548,"starttransfer_time":1.8987,"redirect_time":0,"certinfo":[],"primary_ip":"176.32.111.157","primary_port":443,"local_ip":"101.58.169.248","local_port":49519,"redirect_url":"","method":"POST"},"x-aws-stringtosign":"POST\nsqs.eu-west-1.amazonaws.com\n\/065717488322\/cikab_queue\nAWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNtRowQ7gTmvBjq%2FvUeEev3aBwEV2CSS3UppSyfrPx1gZ5BMx4zCDOSX%2F%2BS3hj6WEy87nYfZJOEz3TNsBrxNaX0Bo63Lqhy2ulwVyTKTeff%2FVASCopzwpWkbhwzo5OcIr3l%2FbRaEGRTTHNCwC5l3THP2mJJ5Lc2UiDJP4zCGKbLtzNOMOABObHC24iL9AwbT2ORb91%2FwxNYtvMhgt9fQWAgX8MgLaYqMCjNcenIMXf8zrNvVDKOQ3q7vf8cFYVvtbQsIUoJA5RreZ2sEQgSefmB%2BLbvM7Rman%2BU%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-04-18T12%3A10%3A53Z&Version=2011-10-01","x-aws-request-headers":{"Content-Type":"application\/x-www-form-urlencoded; charset=utf-8","Expect":""},"x-aws-body":"AWSAccessKeyId=AKIAJWL3PABZWR4AVBYA&Action=DeleteMessage&ReceiptHandle=gH2qdC6bjNtRowQ7gTmvBjq%2FvUeEev3aBwEV2CSS3UppSyfrPx1gZ5BMx4zCDOSX%2F%2BS3hj6WEy87nYfZJOEz3TNsBrxNaX0Bo63Lqhy2ulwVyTKTeff%2FVASCopzwpWkbhwzo5OcIr3l%2FbRaEGRTTHNCwC5l3THP2mJJ5Lc2UiDJP4zCGKbLtzNOMOABObHC24iL9AwbT2ORb91%2FwxNYtvMhgt9fQWAgX8MgLaYqMCjNcenIMXf8zrNvVDKOQ3q7vf8cFYVvtbQsIUoJA5RreZ2sEQgSefmB%2BLbvM7Rman%2BU%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2014-04-18T12%3A10%3A53Z&Version=2011-10-01&Signature=T5%2FeLU3E1MB5Zn0TtVEj0pCR5hitLl0fmMNNqxHy4LM%3D"},"body":{"@attributes":{"ns":"http:\/\/queue.amazonaws.com\/doc\/2011-10-01\/"},"ResponseMetadata":{"RequestId":"764f3bce-f5c8-5dad-a017-7005ed602625"}},"status":200}
+-------------------------
+User: Cloud3 - April 18, 2014, 12:10 pm
+File: phpcronjob3
+Message: {"files":{"SET.GZ.FTP.IN.BST.201404181208.256310":{"status":true},"SET.GZ.FTP.IN.BST.201404181208.257310":{"status":true}},"message":"2 no of files processed."}
+-------------------------

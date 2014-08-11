@@ -1,0 +1,8 @@
+User: Cloud1 - May 27, 2014, 12:14 pm
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud1 - May 27, 2014, 12:15 pm
+File: phpcronjob1
+Message: Creating sales order: Unable to connect with vTiger DB
+-------------------------

@@ -1,0 +1,4259 @@
+User: Cloud1 - May 29, 2014, 8:09 am
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - May 29, 2014, 8:09 am
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - May 29, 2014, 8:09 am
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 8:09 am
+File: phpcronjob2
+Message: Connected with Amazon SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 8:09 am
+File: phpcronjob2
+Message: Trying connecting with Amazon _sThree
+-------------------------
+User: Cloud1 - May 29, 2014, 8:09 am
+File: phpcronjob2
+Message: Connected with Amazon _sThree
+-------------------------
+User: Cloud1 - May 29, 2014, 8:09 am
+File: phpcronjob2
+Message: In getSalesOrders() : Preparing sales order count query
+-------------------------
+User: Cloud1 - May 29, 2014, 8:09 am
+File: phpcronjob2
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid FROM sales_orders SO WHERE SO.sostatus IN ('Created','Approved')
+-------------------------
+User: Cloud1 - May 29, 2014, 8:18 am
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - May 29, 2014, 8:18 am
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - May 29, 2014, 8:18 am
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 8:18 am
+File: phpcronjob2
+Message: Connected with Amazon SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 8:18 am
+File: phpcronjob2
+Message: Trying connecting with Amazon _sThree
+-------------------------
+User: Cloud1 - May 29, 2014, 8:18 am
+File: phpcronjob2
+Message: Connected with Amazon _sThree
+-------------------------
+User: Cloud1 - May 29, 2014, 8:18 am
+File: phpcronjob2
+Message: In getSalesOrders() : Preparing sales order count query
+-------------------------
+User: Cloud1 - May 29, 2014, 8:18 am
+File: phpcronjob2
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid FROM sales_orders SO WHERE SO.sostatus IN ('Created','Approved')
+-------------------------
+User: Cloud1 - May 29, 2014, 8:18 am
+File: phpcronjob2
+Message: In getSalesOrders() : Error executing sales order query : () - 
+-------------------------
+User: Cloud1 - May 29, 2014, 8:18 am
+File: phpcronjob2
+Message: In getAccountsForMos() : Preparing sales order query
+-------------------------
+User: Cloud1 - May 29, 2014, 8:18 am
+File: phpcronjob2
+Message: In getAccountsForMos() : Executing Query: SELECT DISTINCT SO.accountname FROM sales_orders SO
+            WHERE SO.mos_status IN ('Created','Approved') AND SO.mos = 'Yes'
+            LIMIT 0, 50
+-------------------------
+User: Cloud1 - May 29, 2014, 8:18 am
+File: 4
+Message: In getAccountsForMos() : No Sales Order Found!
+-------------------------
+User: Cloud1 - May 29, 2014, 8:18 am
+File: phpcronjob2
+Message: {"message":"In getAccountsForMos() : No Sales Order Found!"}
+-------------------------
+User: Cloud1 - May 29, 2014, 8:29 am
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - May 29, 2014, 8:29 am
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - May 29, 2014, 8:29 am
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 8:29 am
+File: phpcronjob2
+Message: Connected with Amazon SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 8:29 am
+File: phpcronjob2
+Message: Trying connecting with Amazon _sThree
+-------------------------
+User: Cloud1 - May 29, 2014, 8:29 am
+File: phpcronjob2
+Message: Connected with Amazon _sThree
+-------------------------
+User: Cloud1 - May 29, 2014, 8:29 am
+File: phpcronjob2
+Message: In getSalesOrders() : Preparing sales order count query
+-------------------------
+User: Cloud1 - May 29, 2014, 8:29 am
+File: phpcronjob2
+Message: In getSalesOrders() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved')
+-------------------------
+User: Cloud1 - May 29, 2014, 8:51 am
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - May 29, 2014, 8:51 am
+File: 4
+Message: Unable to connect with integration DB
+-------------------------
+User: Cloud1 - May 29, 2014, 8:53 am
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - May 29, 2014, 8:53 am
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - May 29, 2014, 8:53 am
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 8:53 am
+File: phpcronjob2
+Message: Connected with Amazon SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 8:53 am
+File: phpcronjob2
+Message: Trying connecting with Amazon _sThree
+-------------------------
+User: Cloud1 - May 29, 2014, 8:53 am
+File: phpcronjob2
+Message: Connected with Amazon _sThree
+-------------------------
+User: Cloud1 - May 29, 2014, 8:53 am
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Preparing sales order count query
+-------------------------
+User: Cloud1 - May 29, 2014, 8:53 am
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+-------------------------
+User: Cloud1 - May 29, 2014, 9:03 am
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - May 29, 2014, 9:03 am
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - May 29, 2014, 9:03 am
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 9:03 am
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - May 29, 2014, 9:03 am
+File: 4
+Message: Unable to connect with integration DB
+-------------------------
+User: Cloud1 - May 29, 2014, 9:04 am
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - May 29, 2014, 9:04 am
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - May 29, 2014, 9:04 am
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 9:04 am
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - May 29, 2014, 9:04 am
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - May 29, 2014, 9:04 am
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 9:05 am
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - May 29, 2014, 9:05 am
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - May 29, 2014, 9:05 am
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 9:05 am
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - May 29, 2014, 9:05 am
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - May 29, 2014, 9:05 am
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:05 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:05 am
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:05 am
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:05 am
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - May 29, 2014, 11:05 am
+File: phpcronjob1
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - May 29, 2014, 11:09 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:09 am
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:09 am
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:09 am
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - May 29, 2014, 11:09 am
+File: phpcronjob1
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - May 29, 2014, 11:15 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:15 am
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:15 am
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:15 am
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - May 29, 2014, 11:15 am
+File: phpcronjob1
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order count query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid FROM vtiger_salesorder SO WHERE SO.sostatus IN ('Created','Approved')
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Total number of order : 13
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 5
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: No of salesOrder: 13
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12320","salesorder_no":"ORD6200","cf_650":"Yes","cf_651":"No","accountname":"256410","contactid":"10800","duedate":null,"sostatus":"Created","accountid":"10304"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6200)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Total number of products (ORD6200): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(945) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(945) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating sales order (12320) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12321","salesorder_no":"ORD6201","cf_650":"Yes","cf_651":"No","accountname":"257610","contactid":"308","duedate":null,"sostatus":"Created","accountid":"13"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6201)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Total number of products (ORD6201): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(946) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(946) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating sales order (12321) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12322","salesorder_no":"ORD6202","cf_650":"Yes","cf_651":"No","accountname":"257610","contactid":"308","duedate":null,"sostatus":"Created","accountid":"13"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6202)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Total number of products (ORD6202): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(947) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(947) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating sales order (12322) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12323","salesorder_no":"ORD6203","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"0","duedate":"2014-02-27","sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6203)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Total number of products (ORD6203): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(948) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(948) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating sales order (12323) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12325","salesorder_no":"ORD6204","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6204)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Total number of products (ORD6204): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(949) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(949) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating sales order (12325) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 5
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: No of salesOrder: 13
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12333","salesorder_no":"ORD6205","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6205)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Total number of products (ORD6205): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(950) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(950) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating sales order (12333) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12339","salesorder_no":"ORD6206","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6206)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Total number of products (ORD6206): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(951) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(951) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating sales order (12339) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12340","salesorder_no":"ORD6207","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6207)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Total number of products (ORD6207): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(952) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(952) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating sales order (12340) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12342","salesorder_no":"ORD6208","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6208)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Total number of products (ORD6208): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(953) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(953) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating sales order (12342) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12343","salesorder_no":"ORD6209","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6209)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Total number of products (ORD6209): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(954) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(954) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating sales order (12343) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 5
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: No of salesOrder: 13
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12344","salesorder_no":"ORD6210","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6210)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Total number of products (ORD6210): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(955) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(955) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating sales order (12344) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12345","salesorder_no":"ORD6211","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6211)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Total number of products (ORD6211): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(956) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(956) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating sales order (12345) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12346","salesorder_no":"ORD6212","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6212)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Total number of products (ORD6212): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(957) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: In createIntegrationProduct(957) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:18 am
+File: phpcronjob1
+Message: Updating sales order (12346) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order count query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid FROM vtiger_salesorder SO WHERE SO.sostatus IN ('Created','Approved')
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Total number of order : 8
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 5
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: No of salesOrder: 8
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12333","salesorder_no":"ORD6205","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6205)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Total number of products (ORD6205): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationProduct(958) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationProduct(958) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Updating sales order (12333) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12339","salesorder_no":"ORD6206","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6206)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Total number of products (ORD6206): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationProduct(959) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationProduct(959) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Updating sales order (12339) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12340","salesorder_no":"ORD6207","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6207)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Total number of products (ORD6207): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationProduct(960) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationProduct(960) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Updating sales order (12340) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12342","salesorder_no":"ORD6208","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6208)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Total number of products (ORD6208): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationProduct(961) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationProduct(961) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Updating sales order (12342) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12343","salesorder_no":"ORD6209","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6209)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Total number of products (ORD6209): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationProduct(962) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationProduct(962) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Updating sales order (12343) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 5
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: No of salesOrder: 8
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12344","salesorder_no":"ORD6210","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6210)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Total number of products (ORD6210): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationProduct(963) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationProduct(963) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Updating sales order (12344) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12345","salesorder_no":"ORD6211","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6211)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Total number of products (ORD6211): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationProduct(964) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationProduct(964) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Updating sales order (12345) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12346","salesorder_no":"ORD6212","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6212)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Total number of products (ORD6212): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationProduct(965) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: In createIntegrationProduct(965) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:20 am
+File: phpcronjob1
+Message: Updating sales order (12346) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:21 am
+File: phpcronjob1
+Message: Creating sales order: {"count":8,"salesorders":{"ORD6205":{"count":1,"products":{"294974":{"qtn":"5.000","status":true}},"status":true},"ORD6206":{"count":1,"products":{"294974":{"qtn":"36.000","status":true}},"status":true},"ORD6207":{"count":1,"products":{"294974":{"qtn":"28.000","status":true}},"status":true},"ORD6208":{"count":1,"products":{"202035":{"qtn":"1.000","status":true}},"status":true},"ORD6209":{"count":1,"products":{"294974":{"qtn":"1.000","status":true}},"status":true},"ORD6210":{"count":1,"products":{"202035":{"qtn":"3.000","status":true}},"status":true},"ORD6211":{"count":1,"products":{"294975":{"qtn":"2.000","status":true}},"status":true},"ORD6212":{"count":1,"products":{"294975":{"qtn":"3.000","status":true}},"status":true}},"message":"8 number of sales orders processed.","alertEmail":"Mail sent successfully "}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order count query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid FROM vtiger_salesorder SO WHERE SO.sostatus IN ('Created','Approved')
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Total number of order : 7
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 5
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: No of salesOrder: 7
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12339","salesorder_no":"ORD6206","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6206)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Total number of products (ORD6206): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: In createIntegrationProduct(966) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: In createIntegrationProduct(966) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Updating sales order (12339) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12340","salesorder_no":"ORD6207","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6207)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Total number of products (ORD6207): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: In createIntegrationProduct(967) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: In createIntegrationProduct(967) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Updating sales order (12340) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12342","salesorder_no":"ORD6208","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6208)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Total number of products (ORD6208): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: In createIntegrationProduct(968) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: In createIntegrationProduct(968) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Updating sales order (12342) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12343","salesorder_no":"ORD6209","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6209)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Total number of products (ORD6209): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: In createIntegrationProduct(969) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: In createIntegrationProduct(969) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Updating sales order (12343) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:24 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12344","salesorder_no":"ORD6210","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6210)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: Total number of products (ORD6210): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: In createIntegrationProduct(970) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: In createIntegrationProduct(970) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: Updating sales order (12344) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 5
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: No of salesOrder: 7
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12345","salesorder_no":"ORD6211","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6211)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: Total number of products (ORD6211): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: In createIntegrationProduct(971) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: In createIntegrationProduct(971) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: Updating sales order (12345) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12346","salesorder_no":"ORD6212","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6212)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: Total number of products (ORD6212): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: In createIntegrationProduct(972) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: In createIntegrationProduct(972) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: Updating sales order (12346) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:25 am
+File: phpcronjob1
+Message: Creating sales order: {"count":7,"salesorders":{"ORD6206":{"count":1,"products":{"294974":{"qtn":"36.000","status":true}},"status":true},"ORD6207":{"count":1,"products":{"294974":{"qtn":"28.000","status":true}},"status":true},"ORD6208":{"count":1,"products":{"202035":{"qtn":"1.000","status":true}},"status":true},"ORD6209":{"count":1,"products":{"294974":{"qtn":"1.000","status":true}},"status":true},"ORD6210":{"count":1,"products":{"202035":{"qtn":"3.000","status":true}},"status":true},"ORD6211":{"count":1,"products":{"294975":{"qtn":"2.000","status":true}},"status":true},"ORD6212":{"count":1,"products":{"294975":{"qtn":"3.000","status":true}},"status":true}},"message":"7 number of sales orders processed.","alertEmail":"Mail sent successfully "}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Trying to connect to vTiger database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Connected to vTiger database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order count query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid FROM vtiger_salesorder SO WHERE SO.sostatus IN ('Created','Approved')
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Total number of order : 6
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 5
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: No of salesOrder: 6
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12340","salesorder_no":"ORD6207","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6207)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Total number of products (ORD6207): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In createIntegrationProduct(973) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In createIntegrationProduct(973) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Updating sales order (12340) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12342","salesorder_no":"ORD6208","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6208)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Total number of products (ORD6208): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In createIntegrationProduct(974) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In createIntegrationProduct(974) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Updating sales order (12342) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12343","salesorder_no":"ORD6209","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6209)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Total number of products (ORD6209): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In createIntegrationProduct(975) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In createIntegrationProduct(975) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Updating sales order (12343) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12344","salesorder_no":"ORD6210","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6210)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Total number of products (ORD6210): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In createIntegrationProduct(976) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In createIntegrationProduct(976) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Updating sales order (12344) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12345","salesorder_no":"ORD6211","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6211)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Total number of products (ORD6211): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In createIntegrationProduct(977) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In createIntegrationProduct(977) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Updating sales order (12345) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In getSalesOrders() : Preparing sales order query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In getSalesOrders() : Executing Query: SELECT SO.salesorderid, SO.salesorder_no, 
+            ACCF.cf_650, ACCF.cf_651, ACCO.accountname, SO.contactid,
+            SO.duedate, SO.sostatus, ACCO.accountid
+            FROM vtiger_salesorder SO 
+            LEFT JOIN vtiger_account ACCO on ACCO.accountid = SO.accountid
+            LEFT JOIN vtiger_accountscf ACCF on ACCF.accountid = ACCO.accountid
+            WHERE SO.sostatus IN ('Created','Approved')
+            AND (ACCF.cf_650 = 'Yes' OR ACCF.cf_651 = 'Yes') LIMIT 0, 5
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: No of salesOrder: 6
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Creating sales order: {"salesorderid":"12346","salesorder_no":"ORD6212","cf_650":"Yes","cf_651":"No","accountname":"252610","contactid":"264","duedate":null,"sostatus":"Created","accountid":"2"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() Preparing insert sales order query (ORD6212)
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In createIntegrationSalesOrder() : Inserting sales order: 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Total number of products (ORD6212): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In createIntegrationProduct(978) Preparing insert product query.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: In createIntegrationProduct(978) Inserting products 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Updating vtiger sales order status 
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Updating sales order (12346) Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:26 am
+File: phpcronjob1
+Message: Creating sales order: {"count":6,"salesorders":{"ORD6207":{"count":1,"products":{"294974":{"qtn":"28.000","status":true}},"status":true},"ORD6208":{"count":1,"products":{"202035":{"qtn":"1.000","status":true}},"status":true},"ORD6209":{"count":1,"products":{"294974":{"qtn":"1.000","status":true}},"status":true},"ORD6210":{"count":1,"products":{"202035":{"qtn":"3.000","status":true}},"status":true},"ORD6211":{"count":1,"products":{"294975":{"qtn":"2.000","status":true}},"status":true},"ORD6212":{"count":1,"products":{"294975":{"qtn":"3.000","status":true}},"status":true}},"message":"6 number of sales orders processed.","alertEmail":"Mail sent successfully "}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Connected with Amazon SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Trying connecting with Amazon _sThree
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Connected with Amazon _sThree
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Preparing sales order count query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Preparing sales order query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Executing Query: SELECT * FROM sales_orders SO 
+            WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+            LIMIT 0, 5
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(945) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Total number of products (945): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291135.256410 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291135.256410 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291135.256410 contents: HEADERGIZUR           2014052911354325M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012564101+03751+038776200+226140531+039140529+040776200+189296660006+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(945, Delivered) : Updating sales order (945) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(946) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Total number of products (946): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291135.257610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291135.257610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291135.257610 contents: HEADERGIZUR           2014052911355512M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012576101+03751+038776201+226140531+039140529+040776201+189294974001+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(946, Delivered) : Updating sales order (946) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(947) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Total number of products (947): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291136.257610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291136.257610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291136.257610 contents: HEADERGIZUR           2014052911359800M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012576101+03751+038776202+226140531+039140529+040776202+189294975001+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(947, Delivered) : Updating sales order (947) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(948) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Total number of products (948): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291135.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291135.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291135.252610 contents: HEADERGIZUR           2014052911353780M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776203+226140531+039140227+040776203+189202035002+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(948, Delivered) : Updating sales order (948) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(949) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Total number of products (949): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291136.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291136.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291136.252610 contents: HEADERGIZUR           2014052911359770M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776204+226140531+039140529+040776204+189294974003+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(949, Delivered) : Updating sales order (949) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Preparing sales order query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Executing Query: SELECT * FROM sales_orders SO 
+            WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+            LIMIT 0, 5
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(950) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Total number of products (950): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291137.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291137.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291137.252610 contents: HEADERGIZUR           2014052911353861M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776205+226140531+039140529+040776205+189294974005+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(950, Delivered) : Updating sales order (950) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(951) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Total number of products (951): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291138.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291138.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291138.252610 contents: HEADERGIZUR           2014052911358654M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776206+226140531+039140529+040776206+189294974036+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(951, Delivered) : Updating sales order (951) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(952) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Total number of products (952): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291139.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291139.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291139.252610 contents: HEADERGIZUR           2014052911352343M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776207+226140531+039140529+040776207+189294974028+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(952, Delivered) : Updating sales order (952) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(953) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Total number of products (953): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291140.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291140.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291140.252610 contents: HEADERGIZUR           2014052911356802M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776208+226140531+039140529+040776208+189202035001+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(953, Delivered) : Updating sales order (953) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(954) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Total number of products (954): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291141.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291141.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291141.252610 contents: HEADERGIZUR           2014052911353629M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776209+226140531+039140529+040776209+189294974001+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(954, Delivered) : Updating sales order (954) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Preparing sales order query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Executing Query: SELECT * FROM sales_orders SO 
+            WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+            LIMIT 0, 5
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(955) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Total number of products (955): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291142.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291142.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291142.252610 contents: HEADERGIZUR           2014052911357068M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776210+226140531+039140529+040776210+189202035003+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:35 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(955, Delivered) : Updating sales order (955) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(956) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Total number of products (956): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291144.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291144.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291144.252610 contents: HEADERGIZUR           2014052911360575M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776211+226140531+039140529+040776211+189294975002+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(956, Delivered) : Updating sales order (956) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(957) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Total number of products (957): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291145.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291145.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291145.252610 contents: HEADERGIZUR           2014052911364049M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776212+226140531+039140529+040776212+189294975003+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(957, Delivered) : Updating sales order (957) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(958) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Total number of products (958): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291146.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291146.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291146.252610 contents: HEADERGIZUR           2014052911367840M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776205+226140531+039140529+040776205+189294974005+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(958, Delivered) : Updating sales order (958) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(959) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Total number of products (959): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291147.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291147.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291147.252610 contents: HEADERGIZUR           2014052911362824M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776206+226140531+039140529+040776206+189294974036+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(959, Delivered) : Updating sales order (959) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Preparing sales order query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Executing Query: SELECT * FROM sales_orders SO 
+            WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+            LIMIT 0, 5
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(960) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Total number of products (960): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291148.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291148.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291148.252610 contents: HEADERGIZUR           2014052911366238M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776207+226140531+039140529+040776207+189294974028+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(960, Delivered) : Updating sales order (960) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(961) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Total number of products (961): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291149.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291149.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291149.252610 contents: HEADERGIZUR           2014052911369600M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776208+226140531+039140529+040776208+189202035001+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(961, Delivered) : Updating sales order (961) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(962) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Total number of products (962): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291150.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291150.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291150.252610 contents: HEADERGIZUR           2014052911364155M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776209+226140531+039140529+040776209+189294974001+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(962, Delivered) : Updating sales order (962) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(963) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Total number of products (963): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291151.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291151.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291151.252610 contents: HEADERGIZUR           2014052911368051M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776210+226140531+039140529+040776210+189202035003+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(963, Delivered) : Updating sales order (963) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(964) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Total number of products (964): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291152.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291152.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291152.252610 contents: HEADERGIZUR           2014052911363010M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776211+226140531+039140529+040776211+189294975002+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(964, Delivered) : Updating sales order (964) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Preparing sales order query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Executing Query: SELECT * FROM sales_orders SO 
+            WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+            LIMIT 0, 5
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(965) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Total number of products (965): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291153.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291153.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291153.252610 contents: HEADERGIZUR           2014052911366168M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776212+226140531+039140529+040776212+189294975003+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(965, Delivered) : Updating sales order (965) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(966) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Total number of products (966): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291154.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291154.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291154.252610 contents: HEADERGIZUR           2014052911361920M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776206+226140531+039140529+040776206+189294974036+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(966, Delivered) : Updating sales order (966) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(967) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Total number of products (967): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291155.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291155.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291155.252610 contents: HEADERGIZUR           2014052911365991M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776207+226140531+039140529+040776207+189294974028+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(967, Delivered) : Updating sales order (967) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(968) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Total number of products (968): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291156.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291156.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291156.252610 contents: HEADERGIZUR           2014052911369632M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776208+226140531+039140529+040776208+189202035001+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(968, Delivered) : Updating sales order (968) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(969) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Total number of products (969): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291157.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291157.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291157.252610 contents: HEADERGIZUR           2014052911363489M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776209+226140531+039140529+040776209+189294974001+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(969, Delivered) : Updating sales order (969) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Preparing sales order query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Executing Query: SELECT * FROM sales_orders SO 
+            WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+            LIMIT 0, 5
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(970) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Total number of products (970): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291158.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291158.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291158.252610 contents: HEADERGIZUR           2014052911366936M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776210+226140531+039140529+040776210+189202035003+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:36 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(970, Delivered) : Updating sales order (970) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(971) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Total number of products (971): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291200.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291200.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291200.252610 contents: HEADERGIZUR           2014052911371138M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776211+226140531+039140529+040776211+189294975002+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(971, Delivered) : Updating sales order (971) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(972) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Total number of products (972): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291201.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291201.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291201.252610 contents: HEADERGIZUR           2014052911376205M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776212+226140531+039140529+040776212+189294975003+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(972, Delivered) : Updating sales order (972) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(973) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Total number of products (973): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291202.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291202.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291202.252610 contents: HEADERGIZUR           2014052911370980M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776207+226140531+039140529+040776207+189294974028+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(973, Delivered) : Updating sales order (973) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(974) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Total number of products (974): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291203.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291203.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291203.252610 contents: HEADERGIZUR           2014052911372780M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776208+226140531+039140529+040776208+189202035001+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(974, Delivered) : Updating sales order (974) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Preparing sales order query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Executing Query: SELECT * FROM sales_orders SO 
+            WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+            LIMIT 0, 5
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(975) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Total number of products (975): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291204.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291204.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291204.252610 contents: HEADERGIZUR           2014052911370300M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776209+226140531+039140529+040776209+189294974001+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(975, Delivered) : Updating sales order (975) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(976) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Total number of products (976): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291205.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291205.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291205.252610 contents: HEADERGIZUR           2014052911373381M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776210+226140531+039140529+040776210+189202035003+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(976, Delivered) : Updating sales order (976) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(977) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Total number of products (977): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291206.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291206.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291206.252610 contents: HEADERGIZUR           2014052911376682M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776211+226140531+039140529+040776211+189294975002+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(977, Delivered) : Updating sales order (977) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(978) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Total number of products (978): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291207.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291207.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291207.252610 contents: HEADERGIZUR           2014052911373582M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776212+226140531+039140529+040776212+189294975003+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:37 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(978, Delivered) : Updating sales order (978) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Connected with Amazon SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Trying connecting with Amazon _sThree
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Connected with Amazon _sThree
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Preparing sales order count query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Preparing sales order query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Executing Query: SELECT * FROM sales_orders SO 
+            WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+            LIMIT 0, 5
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(970) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Total number of products (970): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291143.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291143.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291143.252610 contents: HEADERGIZUR           2014052911435424M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776210+226140531+039140529+040776210+189202035003+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(970, Delivered) : Updating sales order (970) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(971) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Total number of products (971): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291144.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291144.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291144.252610 contents: HEADERGIZUR           2014052911437203M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776211+226140531+039140529+040776211+189294975002+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(971, Delivered) : Updating sales order (971) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(972) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Total number of products (972): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291145.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291145.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291145.252610 contents: HEADERGIZUR           2014052911433081M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776212+226140531+039140529+040776212+189294975003+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(972, Delivered) : Updating sales order (972) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(973) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Total number of products (973): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291146.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291146.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291146.252610 contents: HEADERGIZUR           2014052911438646M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776207+226140531+039140529+040776207+189294974028+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:43 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(973, Delivered) : Updating sales order (973) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(974) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Total number of products (974): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291148.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291148.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291148.252610 contents: HEADERGIZUR           2014052911444820M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776208+226140531+039140529+040776208+189202035001+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(974, Delivered) : Updating sales order (974) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Preparing sales order query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: In getSalesOrdersForSet() : Executing Query: SELECT * FROM sales_orders SO 
+            WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+            LIMIT 0, 5
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(975) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Total number of products (975): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291149.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291149.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291149.252610 contents: HEADERGIZUR           2014052911444219M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776209+226140531+039140529+040776209+189294974001+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(975, Delivered) : Updating sales order (975) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(976) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Total number of products (976): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291150.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291150.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291150.252610 contents: HEADERGIZUR           2014052911447761M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776210+226140531+039140529+040776210+189202035003+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(976, Delivered) : Updating sales order (976) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(977) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Total number of products (977): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291151.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291151.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291151.252610 contents: HEADERGIZUR           2014052911441387M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776211+226140531+039140529+040776211+189294975002+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(977, Delivered) : Updating sales order (977) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Disabling auto commit
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: In getProductsBySalesOrderId(978) : Fetching products
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Total number of products (978): 1
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291152.252610 content generated
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Adding next line char SET.GZ.FTP.IN.BST.201405291152.252610 at every 80 chars
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: File SET.GZ.FTP.IN.BST.201405291152.252610 contents: HEADERGIZUR           2014052911447324M256      RUTIN   .130KF27777100   mottagn
+ing initierad                                                                   
+      0012526101+03751+038776212+226140531+039140529+040776212+189294975003+C   
+      RUTIN   .130KF27777100   Mottagning avslutad    BYTES/BLOCKS/RETRIES=1084 
+/5    /0.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Store file in S3 Bucket
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: SET files generated and placed in S3 bucket successfully
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: Store file name and file content to message queue.
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: SET files generated successfully and placed SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: In updateIntegrationSalesOrder(978, Delivered) : Updating sales order (978) column set_status to Delivered
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Preparing sales order count query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : No Sales Order Found!
+-------------------------
+User: Cloud1 - May 29, 2014, 11:44 am
+File: phpcronjob2
+Message: {"set":{"count":9,"salesorders":{"ORD6210":{"status":true,"count":1,"file":"SET.GZ.FTP.IN.BST.201405291150.252610"},"ORD6211":{"status":true,"count":1,"file":"SET.GZ.FTP.IN.BST.201405291151.252610"},"ORD6212":{"status":true,"count":1,"file":"SET.GZ.FTP.IN.BST.201405291152.252610"},"ORD6207":{"status":true,"count":1,"file":"SET.GZ.FTP.IN.BST.201405291146.252610"},"ORD6208":{"status":true,"count":1,"file":"SET.GZ.FTP.IN.BST.201405291148.252610"},"ORD6209":{"status":true,"count":1,"file":"SET.GZ.FTP.IN.BST.201405291149.252610"}},"message":"9 number of sales orders processed for SET files."},"message":"In getSalesOrdersCountSet() : No Sales Order Found!"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:49 am
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:49 am
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - May 29, 2014, 11:49 am
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:49 am
+File: phpcronjob2
+Message: Connected with Amazon SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:49 am
+File: phpcronjob2
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - May 29, 2014, 11:49 am
+File: phpcronjob2
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - May 29, 2014, 11:49 am
+File: phpcronjob2
+Message: Trying connecting with Amazon _sThree
+-------------------------
+User: Cloud1 - May 29, 2014, 11:49 am
+File: phpcronjob2
+Message: Connected with Amazon _sThree
+-------------------------
+User: Cloud1 - May 29, 2014, 11:49 am
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Preparing sales order count query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:49 am
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+-------------------------
+User: Cloud1 - May 29, 2014, 11:49 am
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : No Sales Order Found!
+-------------------------
+User: Cloud1 - May 29, 2014, 11:49 am
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Preparing sales order count query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:49 am
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+-------------------------
+User: Cloud1 - May 29, 2014, 11:49 am
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : No Sales Order Found!
+-------------------------
+User: Cloud1 - May 29, 2014, 11:49 am
+File: phpcronjob2
+Message: {"message":"In getSalesOrdersCountSet() : No Sales Order Found!"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:50 am
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:50 am
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - May 29, 2014, 11:50 am
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:50 am
+File: phpcronjob2
+Message: Connected with Amazon SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:50 am
+File: phpcronjob2
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - May 29, 2014, 11:50 am
+File: phpcronjob2
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - May 29, 2014, 11:50 am
+File: phpcronjob2
+Message: Trying connecting with Amazon _sThree
+-------------------------
+User: Cloud1 - May 29, 2014, 11:50 am
+File: phpcronjob2
+Message: Connected with Amazon _sThree
+-------------------------
+User: Cloud1 - May 29, 2014, 11:50 am
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Preparing sales order count query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:50 am
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+-------------------------
+User: Cloud1 - May 29, 2014, 11:50 am
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : No Sales Order Found for SET!
+-------------------------
+User: Cloud1 - May 29, 2014, 11:50 am
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Preparing sales order count query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:50 am
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+-------------------------
+User: Cloud1 - May 29, 2014, 11:50 am
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : No Sales Order Found for SET!
+-------------------------
+User: Cloud1 - May 29, 2014, 11:50 am
+File: phpcronjob2
+Message: {"message":"In getSalesOrdersCountSet() : No Sales Order Found for SET!"}
+-------------------------
+User: Cloud1 - May 29, 2014, 11:56 am
+File: phpcronjob2
+Message: Trying to connect to integration database
+-------------------------
+User: Cloud1 - May 29, 2014, 11:56 am
+File: phpcronjob2
+Message: Connected with integration db
+-------------------------
+User: Cloud1 - May 29, 2014, 11:56 am
+File: phpcronjob2
+Message: Trying connecting with Amazon SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:56 am
+File: phpcronjob2
+Message: Connected with Amazon SQS
+-------------------------
+User: Cloud1 - May 29, 2014, 11:56 am
+File: phpcronjob2
+Message: Trying connecting with Amazon SES
+-------------------------
+User: Cloud1 - May 29, 2014, 11:56 am
+File: phpcronjob2
+Message: Connected with Amazon SES
+-------------------------
+User: Cloud1 - May 29, 2014, 11:56 am
+File: phpcronjob2
+Message: Trying connecting with Amazon _sThree
+-------------------------
+User: Cloud1 - May 29, 2014, 11:56 am
+File: phpcronjob2
+Message: Connected with Amazon _sThree
+-------------------------
+User: Cloud1 - May 29, 2014, 11:56 am
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Preparing sales order count query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:56 am
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved') AND SO.set = 'Yes'
+-------------------------
+User: Cloud1 - May 29, 2014, 11:56 am
+File: phpcronjob2
+Message: In getSalesOrdersCountSet() : No Sales Order Found for SET!
+-------------------------
+User: Cloud1 - May 29, 2014, 11:56 am
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Preparing sales order count query
+-------------------------
+User: Cloud1 - May 29, 2014, 11:56 am
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : Executing Query: SELECT SO.id FROM sales_orders SO WHERE SO.set_status IN ('Created','Approved') AND SO.mos = 'Yes'
+-------------------------
+User: Cloud1 - May 29, 2014, 11:56 am
+File: phpcronjob2
+Message: In getSalesOrdersCountMos() : No Sales Order Found for MOS!
+-------------------------
+User: Cloud1 - May 29, 2014, 11:56 am
+File: phpcronjob2
+Message: {"message":"In getSalesOrdersCountMos() : No Sales Order Found for MOS!"}
+-------------------------
