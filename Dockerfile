@@ -31,14 +31,8 @@ ADD ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 # Install Apache, PHP, sendmail and build-essential
 #
 
-#RUN apt-get install -y apache2 php5 php5-curl php5-mysql php5-mcrypt
-RUN apt-get install -y apache2
-RUN apt-get install -y build-essential
+RUN apt-get install -y apache2 build-essential php5 php5-curl php5-mcrypt php5-mysql sendmail
 RUN a2enmod rewrite
-RUN apt-get install -y php5
-RUN apt-get install -y php5-curl
-RUN apt-get install -y php5-mcrypt
-RUN apt-get install -y sendmail
 
 # Bundle everything and install
 ADD ./src-phpmyadmin /var/www
@@ -56,31 +50,25 @@ ADD ./src-phpmyadmin/config.inc.php /var/www/phpMyAdmin-4.0.8-all-languages/conf
 
 ADD ./src-wordpress /var/www
 
-#
-# Install fcron
-#
-
-ADD ./src-fcron /var/www 
-RUN cd /var/www/fcron-3.2.0; ./configure 
-RUN cd /var/www/fcron-3.2.0; make
-RUN cd /var/www/fcron-3.2.0; make install
-
 
 #
+# Install fcron and batches
+#
+
+ADD ./src-fcron /src
+RUN cd /src/fcron-3.2.0; ./configure 
+RUN cd /src/fcron-3.2.0; make
+RUN cd /src/fcron-3.2.0; make install
+
 # Install batches
-#
+ADD ./src-cronjob /src
 
-ADD ./src-cronjob /var/www
-
-
-#
 # Set fcrontab entry 
-#
-
 RUN fcrontab -l > mycron
-RUN echo "*/30 * * * *  sh /var/www/sales_orders/batches.sh >> /var/log/cronjob" >> mycron
+RUN echo "*/30 * * * *  sh /src/sales_orders/batches.sh >> /var/log/cronjob" >> mycron
 RUN fcrontab mycron
 RUN rm mycron
+
 
 #
 # Install MySQL
@@ -92,7 +80,6 @@ ADD ./src-mysql /src-mysql
 # Load wordpress SQL dump
 ADD ./sql-script/latest.sql /sql-script/latest.sql
 
-
 # Install MySQL server
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y mysql-server && apt-get clean && rm -rf /var/lib/apt/lists/*
 
@@ -102,12 +89,6 @@ RUN sed -i -e"s/^bind-address\s*=\s*127.0.0.1/bind-address = 0.0.0.0/" /etc/mysq
 # Setup admin user
 RUN /src-mysql/mysql-setup.sh
 
-#
-# install php mysql extension 
-#
-
-RUN apt-get update
-RUN apt-get install -y php5-mysql
 
 
 #
@@ -115,4 +96,6 @@ RUN apt-get install -y php5-mysql
 #
 
 EXPOSE 3306 80 443
-CMD ["supervisord","-n"]
+
+ADD ./start.sh /
+CMD ["/start.sh"]

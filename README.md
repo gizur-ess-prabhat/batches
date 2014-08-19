@@ -1,10 +1,5 @@
-OData producer on top of MySQL
-==============================
-
-OData producer built using these libraries:
-
- * http://odatamysqlphpconnect.codeplex.com/
- * http://odataphpproducer.codeplex.com
+Gizur SaaS Batches
+=================
 
 
 Usage
@@ -16,7 +11,8 @@ Prerequisites:
 
 Installation: `docker build --rm .`
 
-Run the container in daemon mode: `docker run -d -p 80:80 -p 443:443 [IMAGE ID]`. The 80 and 443 ports that have been exposed from the container will be routed from the host to the container using the `-p` flag.
+Run the container in daemon mode: `docker run -d -p 80:80 -p 443:443 [IMAGE ID]`. The 80 and 443 ports that have been exposed from the container will be routed 
+from the host to the container using the `-p` flag.
 
 
 Interactive mode
@@ -47,6 +43,10 @@ MySQL credentials for external server should be passed as environment variables 
 Here is an example: `docker run -t -i -e USERNAME="admin", PASSWORD="secret", HOSTNAME="hostname" base /bin/bash`
 
 
+Batch schedule
+--------------
+
+`fcron` is used for scheudling batches. The batch schedule setup in the `Dockerfile`.
 
 
 
